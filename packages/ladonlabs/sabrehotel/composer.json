@@ -1,0 +1,24 @@
+{
+  "name": "ladonlabs/sabrehotel",
+  "description": "This a package to use as a proxy between a laravel application and SABRE hotel web services",
+  "authors": [
+    {
+      "name": "Antonio Nodal",
+      "email": "antonio.nodal88@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "guzzlehttp/guzzle": "~6.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ladonlabs\\sabrehotel\\SabreHotelServiceProvider"
+      ],
+      "aliases": {
+        "SabreHotel": "ladonlabs\\sabrehotel\\SabreHotelFacade"
+      }
+    }
+  }
+}
