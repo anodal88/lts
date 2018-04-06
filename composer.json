@@ -12,12 +12,17 @@
     "fideloper/proxy": "~4.0",
     "laravel/framework": "5.6.*",
     "laravel/tinker": "~1.0",
-    "ladonlabs/sabrehotel":"*"
+    "ladonlabs/sabrehotel":"*",
+    "ladonlabs/hotelbeds":"*"
   },
   "repositories": [
     {
       "type": "path",
       "url": "packages/ladonlabs/sabrehotel"
+    },
+    {
+      "type": "path",
+      "url": "packages/ladonlabs/hotelbeds"
     }
   ],
   "require-dev": {
@@ -35,7 +40,8 @@
     ],
     "psr-4": {
       "App\\": "app/",
-      "ladonlabs\\sabrehotel\\":"packages/ladonlabs/sabrehotel/src"
+      "ladonlabs\\sabrehotel\\":"packages/ladonlabs/sabrehotel/src",
+      "ladonlabs\\hotelbeds\\":"packages/ladonlabs/hotelbeds/src"
     }
   },
   "autoload-dev": {
