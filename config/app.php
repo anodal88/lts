@@ -147,6 +147,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         ladonlabs\sabrehotel\SabreHotelServiceProvider::class,
+        ladonlabs\hotelbeds\HotelBedsServiceProvider::class,
         /*
          * Package Service Providers...
          */
@@ -209,6 +210,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'SabreHotel'=>ladonlabs\sabrehotel\SabreHotelFacade::class,
+        'HotelBeds'=>ladonlabs\hotelbeds\HotelBedsFacade::class,
     ],
 
 ];

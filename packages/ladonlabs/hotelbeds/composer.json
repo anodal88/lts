@@ -1,0 +1,14 @@
+{
+    "name": "ladonlabs/hotelbeds",
+    "description": "Hotel and activity integration through HOTELBEDS",
+    "require": {
+      "guzzlehttp/guzzle": "~6.0"
+    },
+    "authors": [
+        {
+            "name": "Antonio Nodal",
+            "email": "antonio.nodal88@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
