@@ -146,12 +146,13 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        ladonlabs\sabrehotel\SabreHotelServiceProvider::class,
-        ladonlabs\hotelbeds\HotelBedsServiceProvider::class,
+
         /*
          * Package Service Providers...
          */
-
+        ladonlabs\sabrehotel\SabreHotelServiceProvider::class,
+        ladonlabs\hotelbeds\HotelBedsServiceProvider::class,
+        Yajra\Datatables\DatatablesServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -211,6 +212,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'SabreHotel'=>ladonlabs\sabrehotel\SabreHotelFacade::class,
         'HotelBeds'=>ladonlabs\hotelbeds\HotelBedsFacade::class,
+        'Datatables' => Yajra\Datatables\Facades\Datatables::class,
     ],
 
 ];

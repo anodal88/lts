@@ -18,42 +18,42 @@ class AuditData
     /**
      * @var float
      */
-    private $processTime;
+    protected $processTime;
 
     /**
      * @var string
      */
-    private $timestamp;
+    protected $timestamp;
 
     /**
      * @var string
      */
-    private $requestHost;
+    protected $requestHost;
 
     /**
      * @var string
      */
-    private $serverId;
+    protected $serverId;
 
     /**
      * @var string
      */
-    private $environment;
+    protected $environment;
 
     /**
      * @var
      */
-    private $release;
+    protected $release;
 
     /**
      * @var string
      */
-    private $token;
+    protected $token;
 
     /**
      * @var string
      */
-    private $internal;
+    protected $internal;
 
     /**
      * @return float
@@ -197,6 +197,11 @@ class AuditData
     {
         $this->internal = $internal;
         return $this;
+    }
+
+    public function getAttributes()
+    {
+        return get_object_vars($this);
     }
 
 

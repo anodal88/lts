@@ -14,13 +14,14 @@ trait SerializationTrait
 {
     public function jsonSerialize()
     {
-        $result=[];
-        foreach (get_object_vars($this) as $key => $value) {
+        $result = [];
+        $attributes = get_object_vars($this);
+        foreach ($attributes as $key => $value) {
             if (!is_null($value)) {
-                if($value instanceof \DateTime){
+                if ($value instanceof \DateTime) {
                     $value = $value->format("Y-m-d");
                 }
-                $result[$key]=$value;
+                $result[$key] = $value;
             }
         }
         return $result;

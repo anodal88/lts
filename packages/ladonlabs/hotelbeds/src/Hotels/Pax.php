@@ -25,20 +25,20 @@ class Pax implements \JsonSerializable
     const PAX_TYPE_CHILD = "CH";
 
     /** @var string */
-    private $type;
+    protected $type;
 
     /** @var integer */
-    private $age;
+    protected $age;
 
     /**
      * @var string
      */
-    private $name;
+    protected $name;
 
     /**
      * @var string
      */
-    private $surname;
+    protected $surname;
 
     /**
      * Pax constructor.
@@ -47,7 +47,7 @@ class Pax implements \JsonSerializable
      * @param string $name
      * @param string $surname
      */
-    public function __construct( $type=self::PAX_TYPE_ADULT,  $age=25,  $name=null,  $surname=null)
+    public function __construct($type = self::PAX_TYPE_ADULT, $age = 25, $name = null, $surname = null)
     {
         $this->type = $type;
         $this->age = $age;
@@ -67,7 +67,7 @@ class Pax implements \JsonSerializable
      * @param string $type
      * @return Pax
      */
-    public function setType( $type): Pax
+    public function setType(string $type): Pax
     {
         $this->type = $type;
         return $this;
@@ -85,7 +85,7 @@ class Pax implements \JsonSerializable
      * @param int $age
      * @return Pax
      */
-    public function setAge( $age): Pax
+    public function setAge(int $age): Pax
     {
         $this->age = $age;
         return $this;
@@ -103,7 +103,7 @@ class Pax implements \JsonSerializable
      * @param string $name
      * @return Pax
      */
-    public function setName( $name): Pax
+    public function setName(string $name): Pax
     {
         $this->name = $name;
         return $this;
@@ -121,13 +121,11 @@ class Pax implements \JsonSerializable
      * @param string $surname
      * @return Pax
      */
-    public function setSurname( $surname): Pax
+    public function setSurname(string $surname): Pax
     {
         $this->surname = $surname;
         return $this;
     }
-
-
 
 
 }

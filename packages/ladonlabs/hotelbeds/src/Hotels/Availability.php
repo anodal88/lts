@@ -10,6 +10,9 @@
 namespace ladonlabs\hotelbeds\Hotels;
 
 
+use ladonlabs\hotelbeds\Client;
+use ladonlabs\hotelbeds\HandleResponseTrait;
+use ladonlabs\hotelbeds\Response;
 use ladonlabs\hotelbeds\SerializationTrait;
 use ladonlabs\sabrehotel\Filters;
 
@@ -330,9 +333,10 @@ class Availability implements \JsonSerializable
      */
     public function toJson()
     {
-        $this->hotels=['hotel'=>$this->hotels];
+        $availability = clone ($this);
+        $availability->setHotels(['hotel' => $availability->getHotels()]);
 
-        return json_encode($this);
+        return json_encode($availability);
     }
 
 

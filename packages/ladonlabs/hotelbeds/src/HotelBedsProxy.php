@@ -16,6 +16,9 @@ use App\Contracts\StayInterface;
 use GuzzleHttp\Client;
 use GuzzleHttp\RequestOptions;
 use ladonlabs\hotelbeds\Hotels\Availability;
+use ladonlabs\hotelbeds\Hotels\BookingFilter;
+use ladonlabs\hotelbeds\Hotels\BookingRQ;
+use ladonlabs\hotelbeds\Hotels\CheckRatesRQ;
 use ladonlabs\hotelbeds\Hotels\HotelApiContext;
 
 
@@ -87,26 +90,62 @@ class HotelBedsProxy
         $path = $this->getConfigValue('hotel_availability_path');
         $endpoint = $this->getEndpoint($baseEndpoint, $version, $path);
         $response = $client->post($endpoint, $request, $this->getRequestHeaders($request));
-        //dump($response);exit;
-        return $response;
+        return json_decode($response->getBody(), true);
+    }
+
+
+    public function checkRates(CheckRatesRQ $request)
+    {
+        $request = json_encode($request);
+        $client = new \ladonlabs\hotelbeds\Client();
+        $baseEndpoint = $this->getConfigValue('hotel_endpoint');
+        $version = $this->getConfigValue('version');
+        $path = $this->getConfigValue('hotel_check_rates_path');
+        $endpoint = $this->getEndpoint($baseEndpoint, $version, $path);
+        $response = $client->post($endpoint, $request, $this->getRequestHeaders($request));
+        return json_decode($response->getBody(), true);
     }
 
     /**
-     * @param BookingInterface $booking
      * @return mixed
      */
-    public function book(BookingInterface $booking)
+    public function book(BookingRQ $request)
     {
-        // TODO: Implement book() method.
+
+        try{
+
+            $endpoint = $request->needsSecurity()
+                ? $this->getConfigValue('hotel_secure_booking_endpoint')
+                : $this->getConfigValue('hotel_booking_endpoint');
+            $request = json_encode($request);dump($request);
+            $client = new \ladonlabs\hotelbeds\Client();
+            $response = $client->post($endpoint, $request, $this->getRequestHeaders($request));dump($response);exit;
+            dump(json_decode($response->getBody(), true));exit;
+            return json_decode($response->getBody(), true);
+        }catch(\Exception $e){
+            dump($e);exit;
+        }
+
+
+
+
+
     }
 
     /**
      * @param $itineraryID
      * @return mixed
      */
-    public function retrieve($itineraryID)
+    public function retrieve($bookingReference)
     {
-        // TODO: Implement retrieve() method.
+        $client = new \ladonlabs\hotelbeds\Client();
+        $version = $this->getConfigValue('version');
+        $path = $this->getConfigValue('hotel_booking_path') . "/{$bookingReference}";
+        $baseEndpoint = $this->getConfigValue('hotel_endpoint');
+        $endpoint = $this->getEndpoint($baseEndpoint, $version, $path);
+        //dd($endpoint);
+        $response = $client->get($endpoint, $this->getRequestHeaders());
+        return $response;
     }
 
     /**
@@ -123,37 +162,36 @@ class HotelBedsProxy
      * @param BookingInterface $booking
      * @return mixed
      */
-    public function cancel(BookingInterface $booking)
+    public function cancel($bookingReference)
     {
-        // TODO: Implement cancel() method.
+        $client = new \ladonlabs\hotelbeds\Client();
+        $arguments = ['cancellationFlag' => 'CANCELLATION'];
+        $version = $this->getConfigValue('version');
+        $path = $this->getConfigValue('hotel_booking_path') . "/{$bookingReference}";
+        $baseEndpoint = $this->getConfigValue('hotel_endpoint');
+        $endpoint = $this->getEndpoint($baseEndpoint, $version, $path, http_build_query($arguments));
+        //dd($endpoint);
+        $response = $client->get($endpoint, $this->getRequestHeaders());
+        return $response;
     }
 
     /**
-     * @param $property_code
-     * @return mixed
+     * Return The list of all bookings that match with the criteria
+     * @param BookingFilter $criteria
+     * @return Response
      */
-    public function getPropertyDetails($property_code)
+    public function getBookings(BookingFilter $criteria)
     {
-        // TODO: Implement getPropertyDetails() method.
+        $client = new \ladonlabs\hotelbeds\Client();
+        $arguments = (array)$criteria;
+        $version = $this->getConfigValue('version');
+        $path = $this->getConfigValue('hotel_booking_path');
+        $baseEndpoint = $this->getConfigValue('hotel_endpoint');
+        $endpoint = $this->getEndpoint($baseEndpoint, $version, $path, http_build_query($arguments));
+        $response = $client->get($endpoint, $this->getRequestHeaders());
+        return $response;
     }
 
-    /**
-     * @param $property_code
-     * @return mixed
-     */
-    public function getAvailableRooms($property_code)
-    {
-        // TODO: Implement getAvailableRooms() method.
-    }
-
-    /**
-     * @param $property_code
-     * @return mixed
-     */
-    public function getPaymentTypes($property_code)
-    {
-        // TODO: Implement getPaymentTypes() method.
-    }
 
     /**
      * @param $offset
@@ -185,7 +223,7 @@ class HotelBedsProxy
         $client = new \ladonlabs\hotelbeds\Client();
         $arguments = ['fields' => 'all', 'from' => $from, 'to' => $to];
         $version = $this->getConfigValue('version');
-        $path = str_replace(["{type}"],[$type],$this->getConfigValue('hotel_types_path'));
+        $path = str_replace(["{type}"], [$type], $this->getConfigValue('hotel_types_path'));
         $baseEndpoint = $this->getConfigValue('hotel_content_endpoint');
         $endpoint = $this->getEndpoint($baseEndpoint, $version, $path, http_build_query($arguments));
         //dd($endpoint);
@@ -226,6 +264,7 @@ class HotelBedsProxy
         return $headers;
     }
 
+
     /**
      * Generate the endpoint based on version and path
      * @param $version
@@ -240,7 +279,6 @@ class HotelBedsProxy
         }
         return $endpoint;
     }
-
 
 
 }

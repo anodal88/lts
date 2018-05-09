@@ -27,6 +27,11 @@ class AvailabilityRS
     private $hotels;
 
     /**
+     * @var Error
+     */
+    private $error;
+
+    /**
      * @return AuditData
      */
     public function getAuditData(): AuditData
@@ -59,6 +64,24 @@ class AvailabilityRS
     public function setHotels(array $hotels): AvailabilityRS
     {
         $this->hotels = $hotels;
+        return $this;
+    }
+
+    /**
+     * @return Error
+     */
+    public function getError(): Error
+    {
+        return $this->error;
+    }
+
+    /**
+     * @param Error $error
+     * @return AvailabilityRS
+     */
+    public function setError(Error $error): AvailabilityRS
+    {
+        $this->error = $error;
         return $this;
     }
 
