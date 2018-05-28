@@ -26,5 +26,5 @@
     <a href="#"><i class="icon mdi mdi-shield-check"></i><span>Roles</span></a>
 </li>
 <li>
-    <a href="#"><i class="icon mdi mdi-accounts"></i><span>Users</span></a>
+    <a href="{{ route('users') }}"><i class="icon mdi mdi-accounts"></i><span>Users</span></a>
 </li>

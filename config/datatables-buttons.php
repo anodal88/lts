@@ -57,9 +57,7 @@ return [
      * Default html builder parameters.
      */
     'parameters' => [
-        'dom'     => ' "<\'row be-datatable-header\'<\'col-sm-6\'l><\'col-sm-6\'f>>" 
-        "<\'row be-datatable-body\'<\'col-sm-12\'tr>>" 
-        "<\'row be-datatable-footer\'<\'col-sm-5\'i><\'col-sm-7\'p>>"',
+        'dom'     => ' Bfrtip',
         'order'   => [[0, 'desc']],
         'buttons' => [
             'create',

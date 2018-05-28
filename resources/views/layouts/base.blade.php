@@ -47,7 +47,7 @@
                     </li>
                 </ul>
                 <div class="page-title">
-                    <span>Dashboard</span>
+                    <span>@yield('page_title')</span>
                 </div>
                 <ul class="nav navbar-nav float-right be-icons-nav">
                     <li class="nav-item dropdown"><a href="#" role="button" aria-expanded="false" class="nav-link be-toggle-right-sidebar"><span class="icon mdi mdi-settings"></span></a></li>
@@ -132,14 +132,7 @@
     </div>
     <div class="be-content">
         <div class="page-head">
-            <h2 class="page-head-title">Blank Page</h2>
-            <nav aria-label="breadcrumb" role="navigation">
-                <ol class="breadcrumb page-head-nav">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active">Blank Page Header</li>
-                </ol>
-            </nav>
+            @yield('breadcrumbs')
         </div>
         <div class="main-content container-fluid">
             @yield('content')

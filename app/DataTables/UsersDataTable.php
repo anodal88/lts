@@ -16,6 +16,15 @@ class UsersDataTable extends DataTable
     public function dataTable($query)
     {
         return datatables($query)
+            ->editColumn('name', function ($user) {
+                $path = "http://google.com";
+                $link = "<a href='" . $path . "'>{$user->name}</a>";
+                return $link;
+            })
+            ->rawColumns(['name'])
+            ->setRowId(function ($user) {
+                return $user->id;
+            })
             ->addColumn('action', 'aa');
     }
 
@@ -27,7 +36,7 @@ class UsersDataTable extends DataTable
      */
     public function query(User $model)
     {
-        return $model->newQuery()->select('id', 'name','email', 'created_at', 'updated_at');
+        return $model->newQuery()->select('name', 'email', 'created_at', 'updated_at');
     }
 
     /**
@@ -38,10 +47,19 @@ class UsersDataTable extends DataTable
     public function html()
     {
         return $this->builder()
-                    ->columns($this->getColumns())
-                    ->minifiedAjax()
-                    ->addAction(['width' => '80px'])
-                    ->parameters($this->getBuilderParameters());
+            ->setTableId('users')
+            ->columns($this->getColumns())
+            ->addTableClass(['table-striped table-hover table-fw-widget dataTable no-footer'])
+            ->minifiedAjax()
+            ->addAction(['width' => '80px'])
+            ->parameters([
+                'dom' => '"<\'row be-datatable-header\'<\'col-sm-6\'l><\'col-sm-6\'f>>" 
+        "<\'row be-datatable-body\'<\'col-sm-12\'tr>>" 
+        "<\'row be-datatable-footer\'<\'col-sm-5\'i><\'col-sm-7\'p>>"',
+                'buttons' => ['print'],
+            ]);
+        //->parameters($this->getBuilderParameters());
+
     }
 
     /**
@@ -52,7 +70,7 @@ class UsersDataTable extends DataTable
     protected function getColumns()
     {
         return [
-            'id',
+
             'name',
             'email',
             'created_at',
@@ -69,4 +87,6 @@ class UsersDataTable extends DataTable
     {
         return 'Users_' . date('YmdHis');
     }
+
+
 }

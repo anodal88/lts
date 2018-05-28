@@ -153,6 +153,8 @@ return [
         ladonlabs\sabrehotel\SabreHotelServiceProvider::class,
         ladonlabs\hotelbeds\HotelBedsServiceProvider::class,
         Yajra\Datatables\DatatablesServiceProvider::class,
+        Yajra\Datatables\ButtonsServiceProvider::class,
+        Barryvdh\Snappy\ServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -213,6 +215,8 @@ return [
         'SabreHotel'=>ladonlabs\sabrehotel\SabreHotelFacade::class,
         'HotelBeds'=>ladonlabs\hotelbeds\HotelBedsFacade::class,
         'Datatables' => Yajra\Datatables\Facades\Datatables::class,
+        'PDF' => Barryvdh\Snappy\Facades\SnappyPdf::class,
+        'SnappyImage' => Barryvdh\Snappy\Facades\SnappyImage::class,
     ],
 
 ];

@@ -9,15 +9,29 @@
     @include('partials.menus.superadmin', ['data' => [ ]])
 @endsection
 
+@section('page_title')
+    User List
+@endsection
+
+@section('breadcrumbs')
+    <h2 class="page-head-title">Users</h2>
+    <nav aria-label="breadcrumb" role="navigation">
+        <ol class="breadcrumb page-head-nav">
+            <li class="breadcrumb-item active"><a href="{{ route('users') }}">Users</a></li>
+        </ol>
+    </nav>
+@endsection
+
 @section('content')
     <div class="row">
         <div class="col-sm-12">
             <div class="card card-table">
-                <div class="card-header">Default
-                    <div class="tools dropdown"><span class="icon mdi mdi-download"></span><a href="#" role="button"
-                                                                                              data-toggle="dropdown"
-                                                                                              class="dropdown-toggle"><span
-                                    class="icon mdi mdi-more-vert"></span></a>
+                <div class="card-header">Users
+                    <div class="tools dropdown">
+                        <span class="icon mdi mdi-download"></span>
+                        <a href="#" role="button" data-toggle="dropdown" class="dropdown-toggle">
+                            <span class="icon mdi mdi-more-vert"></span>
+                        </a>
                         <div role="menu" class="dropdown-menu"><a href="#" class="dropdown-item">Action</a><a href="#"
                                                                                                               class="dropdown-item">Another
                                 action</a><a href="#" class="dropdown-item">Something else here</a>
