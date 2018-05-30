@@ -18,7 +18,7 @@ class CreateRolesTable extends Migration
             $table->string('name');
             $table->string('role')->unique();
             $table->integer('priority');
-            $table->json('hierarchy');
+            $table->longText('hierarchy')->nullable();
             $table->timestamps();
         });
     }

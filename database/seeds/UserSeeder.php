@@ -11,7 +11,7 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\User::class, 500)->create();
+        factory(App\User::class, 50)->create();
         $default = new \App\User();
         $default->name = "Antonio Nodal";
         $default->email = "antonio.nodal88@gmail.com";

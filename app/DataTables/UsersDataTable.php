@@ -21,7 +21,12 @@ class UsersDataTable extends DataTable
                 $link = "<a href='" . $path . "'>{$user->name}</a>";
                 return $link;
             })
-            ->rawColumns(['name'])
+            ->editColumn('company',function($user){
+                $path = "http://tweeter.com/{$user->company_id}";
+                $link = "<a href='" . $path . "'>{$user->company}</a>";
+                return $link;
+            })
+            ->rawColumns(['name','company'])
             ->setRowId(function ($user) {
                 return $user->id;
             })
@@ -36,10 +41,18 @@ class UsersDataTable extends DataTable
      */
     public function query(User $model)
     {
-        return $model->newQuery()->select('name', 'email', 'created_at', 'updated_at');
+
+        $query =  $model->newQuery()
+            ->select('users.*')
+            ->addSelect(['companies.name as company','companies.id as company_id'])
+            ->join('companies', 'users.company_id', '=', 'companies.id')
+            ->get()
+
+            ;
+        return $query;
     }
 
-    /**
+    /**oin
      * Optional method if you want to use html builder.
      *
      * @return \Yajra\DataTables\Html\Builder
@@ -73,8 +86,8 @@ class UsersDataTable extends DataTable
 
             'name',
             'email',
-            'created_at',
-            'updated_at'
+            'company'
+
         ];
     }
 
