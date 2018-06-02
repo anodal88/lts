@@ -15,7 +15,7 @@ class RoleSeeder extends Seeder
         //ROLE USER
         $user = new App\Role();
         $user->name = "Role User";
-        $user->role = "ROLE_USER";
+        $user->role = \App\Role::ROLE_USER;
         $user->hierarchy = serialize([]);
         $user->priority = 2;
         $user->save();
@@ -24,7 +24,7 @@ class RoleSeeder extends Seeder
         $superAdminHierarchy[]=$user->role;
         $superAdmin = new App\Role();
         $superAdmin->name="Super Administrator";
-        $superAdmin->role="SUPER_ADMIN";
+        $superAdmin->role=\App\Role::SUPER_ADMIN;
         $superAdmin->priority=1;
         $superAdmin->hierarchy=serialize($superAdminHierarchy);
         $superAdmin->save();
