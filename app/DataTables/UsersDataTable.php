@@ -3,7 +3,9 @@
 namespace App\DataTables;
 
 use App\User;
+
 use Yajra\DataTables\Services\DataTable;
+use DB;
 
 class UsersDataTable extends DataTable
 {
@@ -17,20 +19,25 @@ class UsersDataTable extends DataTable
     {
         return datatables($query)
             ->editColumn('name', function ($user) {
-                $path = "http://google.com";
-                $link = "<a href='" . $path . "'>{$user->name}</a>";
-                return $link;
+                return view('datatables.user.columns.nameAvatarRole', [
+                    'user' => $user
+                ]);
             })
             ->editColumn('company',function($user){
                 $path = "http://tweeter.com/{$user->company_id}";
                 $link = "<a href='" . $path . "'>{$user->company}</a>";
                 return $link;
             })
-            ->rawColumns(['name','company'])
             ->setRowId(function ($user) {
                 return $user->id;
             })
-            ->addColumn('action', 'aa');
+            ->addColumn('action',function($user){
+                return view('datatables.user.columns.actions', [
+                    'user' => $user
+                ]);
+            })
+
+            ->rawColumns(['name','company','action']);
     }
 
     /**
@@ -43,12 +50,26 @@ class UsersDataTable extends DataTable
     {
 
         $query =  $model->newQuery()
-            ->select('users.*')
-            ->addSelect(['companies.name as company','companies.id as company_id'])
-            ->join('companies', 'users.company_id', '=', 'companies.id')
-            ->get()
+            ->select([
+                'users.id',
+                'users.name',
+                'users.email',
+                'roles.id as role_id',
+                'roles.name as roleName',
+                'companies.name as company',
+                'companies.id as company_id'
+                ])
 
+            ->selectRaw("LOCATE(',',GROUP_CONCAT(DISTINCT roles.name ORDER BY roles.priority ASC SEPARATOR ',')) as role_sep_pos")
+            ->selectRaw("GROUP_CONCAT(DISTINCT roles.name ORDER BY roles.priority ASC SEPARATOR ',') as role")
+            ->join('companies', 'users.company_id', '=', 'companies.id')
+            ->leftJoin('role_user','users.id','=','role_user.user_id')
+            ->join('roles','role_user.role_id','=','roles.id')
+            ->groupBy(['users.name'])->get()
             ;
+
+
+
         return $query;
     }
 
@@ -64,7 +85,6 @@ class UsersDataTable extends DataTable
             ->columns($this->getColumns())
             ->addTableClass(['table-striped table-hover table-fw-widget dataTable no-footer'])
             ->minifiedAjax()
-            ->addAction(['width' => '80px'])
             ->parameters([
                 'dom' => '"<\'row be-datatable-header\'<\'col-sm-6\'l><\'col-sm-6\'f>>" 
         "<\'row be-datatable-body\'<\'col-sm-12\'tr>>" 
@@ -84,9 +104,10 @@ class UsersDataTable extends DataTable
     {
         return [
 
-            'name',
-            'email',
-            'company'
+            ['data'=>'name','class'=>'user-avatar cell-detail user-info','title'=>'Name'],
+            ['data'=>'email','title'=>'Email'],
+            ['data'=>'company','title'=>'Company'],
+            ['data'=>'action','class'=>'text-right','title'=>'']
 
         ];
     }
