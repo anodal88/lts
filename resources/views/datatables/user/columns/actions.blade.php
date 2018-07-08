@@ -5,7 +5,10 @@
     </button>
     <div role="menu" class="dropdown-menu" x-placement="bottom-start"
          style="position: absolute; transform: translate3d(-100px, 30px, 0px); top: 0px; left: 0px; will-change: transform;">
-        <a href="#" class="dropdown-item">Impersonate</a>
+        @can('impersonate',\App\User::class)
+            <a href="{{route('impersonate',['user'=>$user->id])}}" class="dropdown-item">Impersonate</a>
+        @endcan
+
         <a href="#" class="dropdown-item">
             Edit</a><a href="#" class="dropdown-item">Something else here</a>
         <div class="dropdown-divider"></div>

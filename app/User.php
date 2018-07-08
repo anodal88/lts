@@ -2,12 +2,16 @@
 
 namespace App;
 
+use Collective\Html\Eloquent\FormAccessible;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Session;
 
 class User extends Authenticatable
 {
     use Notifiable;
+    use FormAccessible;
 
     /**
      * The attributes that are mass assignable.
@@ -49,14 +53,15 @@ class User extends Authenticatable
      */
     public function maxRole()
     {
-        $maxRole = null;
-        foreach ($this->roles as $role) {
-            if (is_null($maxRole)) {
-                $maxRole = $role;
-            } else if ($role->priority < $maxRole->priority) {
-                $maxRole = $role;
-            }
-        }
-        return $maxRole;
+        return $this->roles()->orderBy('security_level','asc')->first();
     }
+
+    public function hasRole($role_name){
+        return $this->roles()->where('role',$role_name)->first() instanceof Role;
+    }
+
+    public function isImpersonated(){
+        return Session::has('original_user') && Session::get('original_user')!=$this->id;
+    }
+
 }

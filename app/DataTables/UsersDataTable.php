@@ -33,7 +33,7 @@ class UsersDataTable extends DataTable
             })
             ->addColumn('action',function($user){
                 return view('datatables.user.columns.actions', [
-                    'user' => $user
+                    'user' => $user,
                 ]);
             })
 
@@ -60,8 +60,8 @@ class UsersDataTable extends DataTable
                 'companies.id as company_id'
                 ])
 
-            ->selectRaw("LOCATE(',',GROUP_CONCAT(DISTINCT roles.name ORDER BY roles.priority ASC SEPARATOR ',')) as role_sep_pos")
-            ->selectRaw("GROUP_CONCAT(DISTINCT roles.name ORDER BY roles.priority ASC SEPARATOR ',') as role")
+            ->selectRaw("LOCATE(',',GROUP_CONCAT(DISTINCT roles.name ORDER BY roles.security_level ASC SEPARATOR ',')) as role_sep_pos")
+            ->selectRaw("GROUP_CONCAT(DISTINCT roles.name ORDER BY roles.security_level ASC SEPARATOR ',') as role")
             ->join('companies', 'users.company_id', '=', 'companies.id')
             ->leftJoin('role_user','users.id','=','role_user.user_id')
             ->join('roles','role_user.role_id','=','roles.id')

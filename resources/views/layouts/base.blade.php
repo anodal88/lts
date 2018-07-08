@@ -31,18 +31,30 @@
             <div class="be-right-navbar">
                 <ul class="nav navbar-nav float-right be-user-nav">
                     <li class="nav-item dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
-                            <img src="img/avatar.png" alt="Avatar"><span class="user-name">{{ Auth::user()->name }}</span></a>
+                            <img src="{{asset('img/avatar.png')}}" alt="Avatar"><span class="user-name">{{ Auth::user()->name }}</span></a>
                         <div role="menu" class="dropdown-menu">
                             <div class="user-info">
                                 <div class="user-name">{{ Auth::user()->name }}</div>
                                 <div class="user-position online">Available</div>
                             </div><a href="pages-profile.html" class="dropdown-item"><span class="icon mdi mdi-face"></span> Account</a><a href="#" class="dropdown-item"><span class="icon mdi mdi-settings"></span> Settings</a>
-                            <a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();" class="dropdown-item">
-                                <span class="icon mdi mdi-power"></span> Logout
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                    @csrf
-                                </form>
-                            </a>
+                            @if($user = auth()->user())
+                                @if($user->isImpersonated())
+                                    <a href="{{ route('impersonate.stop') }}" class="dropdown-item">
+                                        <span class="icon mdi mdi-power"></span> Exit Impersonation
+                                    </a>
+                                @else
+                                    <a href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();document.getElementById('logout-form').submit();"
+                                       class="dropdown-item">
+                                        <span class="icon mdi mdi-power"></span> Logout
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                              style="display: none;">
+                                            @csrf
+                                        </form>
+                                    </a>
+                                @endif
+
+                            @endif
                         </div>
                     </li>
                 </ul>
@@ -60,22 +72,22 @@
                                         <div class="content">
                                             <ul>
                                                 <li class="notification notification-unread"><a href="#">
-                                                        <div class="image"><img src="img/avatar2.png" alt="Avatar"></div>
+                                                        <div class="image"><img src="{{asset('img/avatar2.png')}}" alt="Avatar"></div>
                                                         <div class="notification-info">
                                                             <div class="text"><span class="user-name">Jessica Caruso</span> accepted your invitation to join the team.</div><span class="date">2 min ago</span>
                                                         </div></a></li>
                                                 <li class="notification"><a href="#">
-                                                        <div class="image"><img src="img/avatar3.png" alt="Avatar"></div>
+                                                        <div class="image"><img src="{{asset('img/avatar3.png')}}" alt="Avatar"></div>
                                                         <div class="notification-info">
                                                             <div class="text"><span class="user-name">Joel King</span> is now following you</div><span class="date">2 days ago</span>
                                                         </div></a></li>
                                                 <li class="notification"><a href="#">
-                                                        <div class="image"><img src="img/avatar4.png" alt="Avatar"></div>
+                                                        <div class="image"><img src="{{asset('img/avatar4.png')}}" alt="Avatar"></div>
                                                         <div class="notification-info">
                                                             <div class="text"><span class="user-name">John Doe</span> is watching your main repository</div><span class="date">2 days ago</span>
                                                         </div></a></li>
                                                 <li class="notification"><a href="#">
-                                                        <div class="image"><img src="img/avatar5.png" alt="Avatar"></div>
+                                                        <div class="image"><img src="{{asset('img/avatar5.png')}}" alt="Avatar"></div>
                                                         <div class="notification-info"><span class="text"><span class="user-name">Emily Carter</span> is now following you</span><span class="date">5 days ago</span></div></a></li>
                                             </ul>
                                         </div>
@@ -91,14 +103,14 @@
                                 <div class="list">
                                     <div class="content">
                                         <div class="row">
-                                            <div class="col"><a href="#" class="connection-item"><img src="img/github.png" alt="Github"><span>GitHub</span></a></div>
-                                            <div class="col"><a href="#" class="connection-item"><img src="img/bitbucket.png" alt="Bitbucket"><span>Bitbucket</span></a></div>
-                                            <div class="col"><a href="#" class="connection-item"><img src="img/slack.png" alt="Slack"><span>Slack</span></a></div>
+                                            <div class="col"><a href="#" class="connection-item"><img src="{{asset('img/github.png')}}" alt="Github"><span>GitHub</span></a></div>
+                                            <div class="col"><a href="#" class="connection-item"><img src="{{asset('img/bitbucket.png')}}" alt="Bitbucket"><span>Bitbucket</span></a></div>
+                                            <div class="col"><a href="#" class="connection-item"><img src="{{asset('img/slack.png')}}" alt="Slack"><span>Slack</span></a></div>
                                         </div>
                                         <div class="row">
-                                            <div class="col"><a href="#" class="connection-item"><img src="img/dribbble.png" alt="Dribbble"><span>Dribbble</span></a></div>
-                                            <div class="col"><a href="#" class="connection-item"><img src="img/mail_chimp.png" alt="Mail Chimp"><span>Mail Chimp</span></a></div>
-                                            <div class="col"><a href="#" class="connection-item"><img src="img/dropbox.png" alt="Dropbox"><span>Dropbox</span></a></div>
+                                            <div class="col"><a href="#" class="connection-item"><img src="{{asset('img/dribbble.png')}}" alt="Dribbble"><span>Dribbble</span></a></div>
+                                            <div class="col"><a href="#" class="connection-item"><img src="{{asset('img/mail_chimp.png')}}" alt="Mail Chimp"><span>Mail Chimp</span></a></div>
+                                            <div class="col"><a href="#" class="connection-item"><img src="{{asset('img/dropbox.png')}}" alt="Dropbox"><span>Dropbox</span></a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -117,7 +129,20 @@
                     <div class="left-sidebar-content">
                         <ul class="sidebar-elements">
                             <li class="divider">Menu</li>
-                            @yield('menu')
+                            @section('menu')
+                                @switch(Auth::user()->maxRole()->role)
+                                    @case('ROLE_SUPER_ADMIN')
+                                        @include('partials.menus.superadmin', ['data' => [ ]])
+                                    @break
+
+                                    @case('ROLE_USER')
+                                        @include('partials.menus.user', ['data' => [ ]])
+                                    @break
+
+                                    @default
+                                    This part never should be reached
+                                @endswitch
+                            @show
                         </ul>
                     </div>
                 </div>
@@ -156,20 +181,20 @@
                                     <div class="content">
                                         <h2>Recent</h2>
                                         <div class="contact-list contact-list-recent">
-                                            <div class="user"><a href="#"><img src="img/avatar1.png" alt="Avatar">
+                                            <div class="user"><a href="#"><img src="{{asset('img/avatar1.png')}}" alt="Avatar">
                                                     <div class="user-data"><span class="status away"></span><span class="name">Claire Sassu</span><span class="message">Can you share the...</span></div></a></div>
-                                            <div class="user"><a href="#"><img src="img/avatar2.png" alt="Avatar">
+                                            <div class="user"><a href="#"><img src="{{asset('img/avatar2.png')}}" alt="Avatar">
                                                     <div class="user-data"><span class="status"></span><span class="name">Maggie jackson</span><span class="message">I confirmed the info.</span></div></a></div>
-                                            <div class="user"><a href="#"><img src="img/avatar3.png" alt="Avatar">
+                                            <div class="user"><a href="#"><img src="{{asset('img/avatar3.png')}}" alt="Avatar">
                                                     <div class="user-data"><span class="status offline"></span><span class="name">Joel King		</span><span class="message">Ready for the meeti...</span></div></a></div>
                                         </div>
                                         <h2>Contacts</h2>
                                         <div class="contact-list">
-                                            <div class="user"><a href="#"><img src="img/avatar4.png" alt="Avatar">
+                                            <div class="user"><a href="#"><img src="{{asset('img/avatar4.png')}}" alt="Avatar">
                                                     <div class="user-data2"><span class="status"></span><span class="name">Mike Bolthort</span></div></a></div>
-                                            <div class="user"><a href="#"><img src="img/avatar5.png" alt="Avatar">
+                                            <div class="user"><a href="#"><img src="{{asset('img/avatar5.png')}}" alt="Avatar">
                                                     <div class="user-data2"><span class="status"></span><span class="name">Maggie jackson</span></div></a></div>
-                                            <div class="user"><a href="#"><img src="img/avatar6.png" alt="Avatar">
+                                            <div class="user"><a href="#"><img src="{{asset('img/avatar6.png')}}" alt="Avatar">
                                                     <div class="user-data2"><span class="status offline"></span><span class="name">Jhon Voltemar</span></div></a></div>
                                         </div>
                                     </div>
@@ -181,7 +206,7 @@
                         </div>
                         <div class="chat-window">
                             <div class="title">
-                                <div class="user"><img src="img/avatar2.png" alt="Avatar">
+                                <div class="user"><img src="{{asset('img/avatar2.png')}}" alt="Avatar">
                                     <h2>Maggie jackson</h2><span>Active 1h ago</span>
                                 </div><span class="icon return mdi mdi-chevron-left"></span>
                             </div>

@@ -1,18 +1,16 @@
 @extends('layouts.base')
 
-@section('menu')
-    @include('partials.menus.superadmin', ['data' => []      ])
-@endsection
+
 
 @section('content')
 
-                        @if (session('status'))
-                            <div class="alert alert-success">
-                                {{ session('status') }}
-                            </div>
-                        @endif
+    @if (session('status'))
+        <div class="alert alert-success">
+            {{ session('status') }}
+        </div>
+    @endif
 
-                        You are logged in!
+    You are logged in!
 
 @endsection
 

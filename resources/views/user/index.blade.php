@@ -5,9 +5,7 @@
     <link rel="stylesheet" type="text/css" href="lib/datatables/datatables.net-bs4/css/dataTables.bootstrap4.css"/>
 @endsection
 
-@section('menu')
-    @include('partials.menus.superadmin', ['data' => [ ]])
-@endsection
+
 
 @section('page_title')
     User List

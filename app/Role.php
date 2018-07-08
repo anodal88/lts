@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Role extends Model
 {
     const ROLE_USER = 'ROLE_USER';
-    const SUPER_ADMIN = 'SUPER_ADMIN';
+    const ROLE_SUPER_ADMIN = 'ROLE_SUPER_ADMIN';
 
     /**
      * The attributes that are mass assignable.
@@ -15,14 +15,8 @@ class Role extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'role', 'parent_id', 'priority', 'hierarchy'
+        'name', 'role', 'parent_id', 'security_level'
     ];
-
-    //To automatically convert serialized Data to the original type
-    public function getHierarchyAttribute($value)
-    {
-        return unserialize($value);
-    }
 
     /**
      * The users that belong to the role.

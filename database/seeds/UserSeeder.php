@@ -13,10 +13,9 @@ class UserSeeder extends Seeder
     {
         /** @var  \Illuminate\Database\Eloquent\Collection $roles */
         $roles = \App\Role::all();
-
+        $roleUser = $roles->where('role', \App\Role::ROLE_USER)->first();
         factory(App\User::class, 50)->create()
-            ->each(function ($u) use ($roles) {
-                $roleUser = $roles->where('role', \App\Role::ROLE_USER)->first();
+            ->each(function ($u) use ($roleUser) {
                 $u->roles()->save($roleUser);
             });
 
