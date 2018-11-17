@@ -20,7 +20,7 @@ class CreateAirportsTable extends Migration
             $table->boolean('primary');
 
             //Google maps settings
-            $table->json('center');
+            $table->point('center');
             $table->integer('zoom');
             //Indexes
             $table->unique('iata_code');

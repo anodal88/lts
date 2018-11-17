@@ -146,20 +146,29 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        ladonlabs\sabrehotel\SabreHotelServiceProvider::class,
-        ladonlabs\hotelbeds\HotelBedsServiceProvider::class,
+
         /*
          * Package Service Providers...
          */
+        ladonlabs\sabrehotel\SabreHotelServiceProvider::class,
+        ladonlabs\hotelbeds\HotelBedsServiceProvider::class,
+        Yajra\Datatables\DatatablesServiceProvider::class,
+        Yajra\Datatables\ButtonsServiceProvider::class,
+        Barryvdh\Snappy\ServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
 
         /*
          * Application Service Providers...
          */
+
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\SabrePropertyServiceProvider::class,
+
+
 
     ],
 
@@ -211,6 +220,12 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'SabreHotel'=>ladonlabs\sabrehotel\SabreHotelFacade::class,
         'HotelBeds'=>ladonlabs\hotelbeds\HotelBedsFacade::class,
+        'Datatables' => Yajra\Datatables\Facades\Datatables::class,
+        'PDF' => Barryvdh\Snappy\Facades\SnappyPdf::class,
+        'SnappyImage' => Barryvdh\Snappy\Facades\SnappyImage::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+        'Input' => Illuminate\Support\Facades\Input::class,
     ],
 
 ];

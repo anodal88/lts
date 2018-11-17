@@ -16,16 +16,13 @@ class CreateCompaniesTable extends Migration
         Schema::create('companies', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('address_line');
+            $table->string('sub_domain')->unique();
             $table->text("logo");
-            $table->string('owner');
             $table->string('iata', 50);
-            $table->string('postal_code', 50);
+            $table->string('business_identification_number');
             $table->string('phone', 50);
             $table->string('fax', 50);
             $table->string('contact_email');
-            $table->string('reservations_email');
-            $table->string('business_identification_number');
             $table->timestamps();
         });
     }

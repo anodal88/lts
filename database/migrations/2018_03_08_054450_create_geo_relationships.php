@@ -36,6 +36,8 @@ class CreateGeoRelationships extends Migration
                 ->on('state_provinces')
                 ->onDelete('cascade');
         });
+
+
     }
 
     /**
@@ -59,6 +61,7 @@ class CreateGeoRelationships extends Migration
             $table->dropForeign('CITY_STATE_PROVINCE_ID_FK');
             $table->dropColumn('state_province_id');
         });
+
 
     }
 }
