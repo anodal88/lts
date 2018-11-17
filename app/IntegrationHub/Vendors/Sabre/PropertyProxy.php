@@ -14,18 +14,18 @@ use App\IntegrationHub\Contracts\IPropertyProvider;
 use App\IntegrationHub\Proxy;
 use App\IntegrationHub\Traits\ProxyTrait;
 use App\IntegrationHub\Utils\XMLSerializer;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\Availability\AvailRequestSegment;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\Availability\Criterion;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\Availability\GuestCounts;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\Availability\HotelRef;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\Availability\HotelSearchCriteria;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\Availability\OTA_HotelAvailRQ;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\Availability\OTA_HotelAvailRS;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\Availability\OTA_HotelAvailService;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\Availability\SessionCreateRQ;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\Availability\SessionCreateRQService;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\Availability\SessionCreateRS;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\Availability\TimeSpan;
+use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\AvailRequestSegment;
+use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\Criterion;
+use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\GuestCounts;
+use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\HotelRef;
+use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\HotelSearchCriteria;
+use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\OTA_HotelAvailRQ;
+use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\OTA_HotelAvailRS;
+use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\OTA_HotelAvailService;
+use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\SessionCreateRQ;
+use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\SessionCreateRQService;
+use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\SessionCreateRS;
+use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\TimeSpan;
 use Illuminate\Support\Facades\Log;
 use Monolog\Logger;
 use Wsdl2PhpGenerator\Config;
@@ -168,8 +168,8 @@ class PropertyProxy extends Proxy implements IPropertyProvider
         $generator->generate(
             new Config(array(
                 'inputFile' => self::WSDL_OTA_HOTELAVAIL,
-                'outputDir' => dirname(__FILE__) . '/SoapMap/Availability',
-                'namespaceName' => "App\\IntegrationHub\\Vendors\\Sabre\\SoapMap\\Availability",
+                'outputDir' => dirname(__FILE__) . '/SoapMap/OTA_HotelAvailRQ',
+                'namespaceName' => "App\\IntegrationHub\\Vendors\\Sabre\\SoapMap\\OTA_HotelAvailRQ",
                 'constructorParamsDefaultToNull' => true,
             ))
         );
@@ -248,12 +248,11 @@ class PropertyProxy extends Proxy implements IPropertyProvider
 
     /**
      * Request a valid auth token
-     * @param SharedContext $sharedContext
-     * @return mixed
+     * @return null
      */
     public function createSession()
     {
-        $wsdl = __DIR__ . '/SoapMap/wsdls/SessionCreateRQ/SessionCreateRQ.wsdl';
+        $wsdl = __DIR__ . '/wsdls/SessionCreateRQ/SessionCreateRQ.wsdl';
         $client = new \SoapClient($wsdl,
             array(
                 "uri" => $this->endpoint,
