@@ -2,25 +2,221 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="290bf3c9-95bb-47e7-952b-31e750256bea" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/forms/user.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/lts.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lts.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/City.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/City.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Country.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Country.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/StateProvince.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/StateProvince.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/logging.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/logging.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/sabrehotel.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/sabrehotel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/base.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/base.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/forms/user.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/menus/superadmin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/menus/superadmin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/PropertyProxy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/PropertyProxy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/ADA_Accessible.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/AckRequested.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Acknowledgment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/AdditionalAvail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/AdditionalInfo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Address.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/AdultsOnly.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Alt_Avail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/ApplicationResults.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/AvailRequestSegment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/AvailabilityOption.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/AvailabilityOptions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Award.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/BasicPropertyInfo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/BeachFront.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Body.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/BookingChannel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Breakfast.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/BusinessCenter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/BusinessReady.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/CancelPolicy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/CanonicalizationMethodType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/CityList.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/CompanyName.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/CompletionCodes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/ContactNumber.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/ContactNumbers.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Conventions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Corporate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Criterion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Customer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/DC_AvailParticipant.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/DC_SellParticipant.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/DSAKeyValueType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Dataport.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Description.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/DiagnosticLevels.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/DiagnosticResults.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Diagnostics.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/DigestMethodType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Dining.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/DirectConnect.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/DryClean.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/EcoCertified.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Envelope.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Error.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/ErrorList.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/ErrorType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/ExecutiveFloors.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Fault.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/FitnessCenter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/FreeLocalCalls.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/FreeParking.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/FreeShuttle.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/FreeWifiInMeetingRooms.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/FreeWifiInPublicSpaces.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/FreeWifiInRooms.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/From.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/FullServiceSpa.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/GameFacilities.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Golf.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/GuestCounts.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Header.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/HighSpeedInternet.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/HostCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/HotelFeature.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/HotelRef.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/HotelSearchCriteria.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/HypoallergenicRooms.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/ID.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Identification.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/IdentifierSystem.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/InRoomCoffeeTea.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/InRoomMiniBar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/InRoomRefrigerator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/InRoomSafe.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/IndoorPool.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/InteriorDoorways.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Jacuzzi.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/KeyInfoType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/KeyValueType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/KidsFacilities.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/KitchenFacilities.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Line.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/LocationDescription.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Manifest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/ManifestType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/MealService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/MeetingFacilities.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/MessageCondition.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/MessageData.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/MessageHeader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/MessageOrder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/NoAdultTV.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/NonSmoking.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/OTA_HotelAvailRQ.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/OTA_HotelAvailRS.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/OTA_HotelAvailService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/ObjectType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/OutdoorPool.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/PGPDataType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/POS.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/PartyId.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Pets.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/PointOfInterest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Pool.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/ProblemBase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/ProblemInformation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/ProblemSummary.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Property.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/PropertyOptionInfo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/PublicTransportationAdjacent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/RSAKeyValueType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/RateAccessCode.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/RateAssured.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/RatePlanCandidates.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/RateRange.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/RatesExceedMax.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Recreation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/RefPoint.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Reference.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/ReferenceType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/RestrictedRoomAccess.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/ResultSummary.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Results.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/RetrievalMethodType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/RoomRate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/RoomService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/RoomService24Hours.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/RoomsWithBalcony.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/SPKIDataType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/STL_Payload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/SabreHeader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Schema.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Security.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Service.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/SignatureMethodType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/SignaturePropertiesType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/SignaturePropertyType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/SignatureType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/SignatureValueType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/SignedInfoType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/SkiInOutProperty.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/SmokeFree.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/SmokingRoomsAvail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Source.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/SpecialOffers.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/StatusRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/StatusResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/SyncReply.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/SystemSpecificResults.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Tennis.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/TimeSpan.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/To.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/TraceRecord.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/TraceRole.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Traces.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/TrackingID.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/TransformType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/TransformsType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/UnAvail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/UsernameToken.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/WaterPurificationSystem.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/Wheelchair.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/X509DataType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/X509IssuerSerialType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/autoload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/detail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/messageStatustype.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/sequenceNumbertype.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/severitytype.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/Availability/statustype.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/IgnoreTransactionLLSRQ/IgnoreTransactionLLS2.0.0RQ.wsdl" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/IgnoreTransactionLLSRQ/IgnoreTransactionLLS2.0.0RQ.wsdl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/IgnoreTransactionLLSRQ/IgnoreTransactionLLS2.0.0RQ.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/IgnoreTransactionLLSRQ/IgnoreTransactionLLS2.0.0RQ.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/IgnoreTransactionLLSRQ/IgnoreTransactionLLS2.0.0RQRS.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/IgnoreTransactionLLSRQ/IgnoreTransactionLLS2.0.0RQRS.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/IgnoreTransactionLLSRQ/IgnoreTransactionLLS2.0.0RS.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/IgnoreTransactionLLSRQ/IgnoreTransactionLLS2.0.0RS.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/IgnoreTransactionLLSRQ/STL_For_SabreProtocol_v.1.2.0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCloseRQ/STL_For_SabreProtocol_v.1.2.0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/IgnoreTransactionLLSRQ/STL_Header_v.1.2.0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCloseRQ/STL_Header_v.1.2.0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/IgnoreTransactionLLSRQ/envelope.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCreateRQ/envelope.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/IgnoreTransactionLLSRQ/msg-header-2_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCreateRQ/msg-header-2_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/IgnoreTransactionLLSRQ/wsse.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCreateRQ/wsse.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/IgnoreTransactionLLSRQ/xlink.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCreateRQ/xlink.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/IgnoreTransactionLLSRQ/xml.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCreateRQ/xml.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/IgnoreTransactionLLSRQ/xmldsig-core-schema.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCreateRQ/xmldsig-core-schema.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCloseRQ/OpenReservation.1.1.0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCloseRQ/OpenReservation.1.1.0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCloseRQ/STL2_MsgCommon_v02_01.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCloseRQ/STL2_MsgCommon_v02_01.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCloseRQ/STL2_Payload_v02_01.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCloseRQ/STL2_Payload_v02_01.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCloseRQ/STL_For_SabreProtocol_v.1.2.0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/IgnoreTransactionLLSRQ/STL_For_SabreProtocol_v.1.2.0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCloseRQ/STL_Header_v.1.2.0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/IgnoreTransactionLLSRQ/STL_Header_v.1.2.0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCloseRQ/SessionCloseRQ.wsdl" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCloseRQ/SessionCloseRQ.wsdl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCloseRQ/SessionCloseRQ.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCloseRQ/SessionCloseRQ.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCloseRQ/SessionCloseRQRS.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCloseRQ/SessionCloseRQRS.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCloseRQ/SessionCloseRS.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCloseRQ/SessionCloseRS.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCloseRQ/envelope.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCloseRQ/envelope.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCloseRQ/msg-header-2_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCloseRQ/msg-header-2_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCloseRQ/sp_common.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCloseRQ/sp_common.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCloseRQ/sp_eab_common.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCloseRQ/sp_eab_common.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCloseRQ/sws_common.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCloseRQ/sws_common.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCloseRQ/wsse.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCloseRQ/wsse.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCloseRQ/wsse2.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCloseRQ/wsse2.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCloseRQ/xlink.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCloseRQ/xlink.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCloseRQ/xml.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCloseRQ/xml.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCloseRQ/xmldsig-core-schema.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCloseRQ/xmldsig-core-schema.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCreateRQ/SessionCreateRQ.wsdl" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCreateRQ/SessionCreateRQ.wsdl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCreateRQ/SessionCreateRQ.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCreateRQ/SessionCreateRQ.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCreateRQ/SessionCreateRQRS.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCreateRQ/SessionCreateRQRS.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCreateRQ/SessionCreateRS.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/SessionCreateRQ/SessionCreateRS.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCreateRQ/envelope.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/IgnoreTransactionLLSRQ/envelope.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCreateRQ/msg-header-2_0.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/IgnoreTransactionLLSRQ/msg-header-2_0.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCreateRQ/wsse.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/IgnoreTransactionLLSRQ/wsse.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCreateRQ/xlink.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/IgnoreTransactionLLSRQ/xlink.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCreateRQ/xml.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/IgnoreTransactionLLSRQ/xml.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/wsdls/SessionCreateRQ/xmldsig-core-schema.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/IgnoreTransactionLLSRQ/xmldsig-core-schema.xsd" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,10 +231,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
+            <state relative-caret-position="648">
               <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
               <folding>
                 <element signature="e#40#53#0#PHP" expanded="true" />
@@ -47,12 +243,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PropertyProxy.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PropertyProxy.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/PropertyProxy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+            <state relative-caret-position="459">
+              <caret line="171" column="98" selection-start-line="171" selection-start-column="98" selection-end-line="171" selection-end-column="98" />
               <folding>
+                <element signature="e#176#227#0#PHP" expanded="true" />
                 <element signature="e#4791#4821#0#PHP" expanded="true" />
                 <element signature="e#4923#4953#0#PHP" expanded="true" />
                 <element signature="e#5073#5103#0#PHP" expanded="true" />
@@ -222,8 +419,8 @@
         <option value="$PROJECT_DIR$/app/IntegrationHub/Utils/XMLSerializer.php" />
         <option value="$PROJECT_DIR$/config/sabrehotel.php" />
         <option value="$PROJECT_DIR$/app/IntegrationHub/Proxy.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
         <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/PropertyProxy.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
       </list>
     </option>
   </component>
@@ -385,15 +582,6 @@
             <path>
               <item name="lts" type="b2602c69:ProjectViewProjectNode" />
               <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="IntegrationHub" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Vendors" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Sabre" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="SoapMap" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="lts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -424,19 +612,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views" />
-      <recent name="$PROJECT_DIR$/resources/views/partials" />
-      <recent name="$PROJECT_DIR$/resources/views/datatables/user/columns" />
-      <recent name="$PROJECT_DIR$/packages/ladonlabs/hotelbeds/src/Hotels/Content" />
-      <recent name="$PROJECT_DIR$/packages/ladonlabs/sabrehotel/src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/IntegrationHub/Utils" />
       <recent name="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap" />
       <recent name="$PROJECT_DIR$/database/factories" />
       <recent name="$PROJECT_DIR$/packages/ladonlabs/hotelbeds/src/config" />
       <recent name="$PROJECT_DIR$/packages/ladonlabs/hotelbeds/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre" />
+      <recent name="$PROJECT_DIR$/resources/views" />
+      <recent name="$PROJECT_DIR$/resources/views/partials" />
+      <recent name="$PROJECT_DIR$/resources/views/datatables/user/columns" />
+      <recent name="$PROJECT_DIR$/packages/ladonlabs/hotelbeds/src/Hotels/Content" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -521,12 +709,12 @@
       <workItem from="1541366785494" duration="28000" />
       <workItem from="1541728803943" duration="8559000" />
       <workItem from="1541772033028" duration="14000" />
-      <workItem from="1542426895021" duration="3623000" />
+      <workItem from="1542426895021" duration="4244000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="285758000" />
+    <option name="totallyTimeSpent" value="286379000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="-11" width="1875" height="1092" extended-state="6" />
@@ -895,26 +1083,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
-          <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/PropertyProxy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        <state relative-caret-position="459">
+          <caret line="171" column="98" selection-start-line="171" selection-start-column="98" selection-end-line="171" selection-end-column="98" />
           <folding>
+            <element signature="e#176#227#0#PHP" expanded="true" />
             <element signature="e#4791#4821#0#PHP" expanded="true" />
             <element signature="e#4923#4953#0#PHP" expanded="true" />
             <element signature="e#5073#5103#0#PHP" expanded="true" />
             <element signature="e#5223#5253#0#PHP" expanded="true" />
             <element signature="e#5373#5403#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+          <folding>
+            <element signature="e#40#53#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
