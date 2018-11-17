@@ -23,4 +23,12 @@ class Country extends Model
     {
         return $this->hasMany('App\StateProvince');
     }
+
+    /**
+     * Get the users for the country.
+     */
+    public function users()
+    {
+        return $this->hasMany('App\User');
+    }
 }

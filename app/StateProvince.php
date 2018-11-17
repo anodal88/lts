@@ -24,4 +24,12 @@ class StateProvince extends Model
     {
         return $this->hasMany('App\City');
     }
+
+    /**
+     * Get the users for the State.
+     */
+    public function users()
+    {
+        return $this->hasMany('App\User');
+    }
 }

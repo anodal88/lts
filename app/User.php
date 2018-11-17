@@ -39,6 +39,19 @@ class User extends Authenticatable
         return $this->belongsTo('App\Company');
     }
 
+    public function country(){
+        return $this->belongsTo('App\Country');
+    }
+
+    public function stateProvince(){
+        return $this->belongsTo('App\StateProvince');
+    }
+
+    public function city(){
+        return $this->belongsTo('App\City');
+    }
+
+
     /**
      * The roles that belong to the user.
      */

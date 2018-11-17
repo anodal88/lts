@@ -12,7 +12,7 @@
     <ul class="sub-menu">
         <li><a href="{{ route('users') }}">User list</a>
         </li>
-        <li><a href="{{route('users.new')}}">New</a>
+        <li><a href="{{route('users.create')}}">New</a>
         </li>
 
     </ul>

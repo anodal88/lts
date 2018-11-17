@@ -20,32 +20,60 @@
 
 return [
     'soap' => [
-        'endpoint' => 'https://sws-crt.cert.havail.sabre.com',
-        'ignore_transaction_rq_version' => '2.0.0',
-        'ota_hotel_avail_rq_version' => '2.3.0',
-        'ota_hotel_res_rq_version' => '2.2.0',
-        'ota_cancel_rq_version' => '2.0.2',
-        'hotel_property_description_rq_version' => '2.3.0',
-        'hotel_rate_description_rq_version' => '2.3.0',
-        'end_transactionlls_rq_version' => '2.0.8',
-        'passenger_details_rq_version' => '3.3.0',
-        'get_reservation_rq_version' => '1.17.0',
-        'get_hotel_chain_rq_version' => '1.0.0',
-        'get_hotel_list_version' => '1.0.0',
-        'domain' => 'DEFAULT',
-        'ipcc' => 'UC6I',
-        'username' => '986532',
-        'password' => 'WS030805',
-        'application_id' => '99999999',
-        'create_session_wsdl' => 'http://webservices.sabre.com/wsdl/sabreXML1.0.00/usg/SessionCreateRQ.wsdl',
-        'close_session_wsdl' => 'http://webservices.sabre.com/wsdl/sabreXML1.0.00/usg/SessionCloseRQ.wsdl',
-        'ignore_transaction_wsdl' => 'http://webservices.sabre.com/wsdl/tpfc/IgnoreTransactionLLS2.0.0RQ.wsdl',
-        'logs_enabled' => false,
-        'log_file' => storage_path("logs/sabrehotel_logs.xml"),
-        'client' => [
-            'timeout' => 10,
-            'debug' => false
+        'dev' => [
+            'endpoint' => 'https://sws-crt.cert.havail.sabre.com',
+            'ignore_transaction_rq_version' => '2.0.0',
+            'ota_hotel_avail_rq_version' => '2.3.0',
+            'ota_hotel_res_rq_version' => '2.2.0',
+            'ota_cancel_rq_version' => '2.0.2',
+            'hotel_property_description_rq_version' => '2.3.0',
+            'hotel_rate_description_rq_version' => '2.3.0',
+            'end_transactionlls_rq_version' => '2.0.8',
+            'passenger_details_rq_version' => '3.3.0',
+            'get_reservation_rq_version' => '1.17.0',
+            'get_hotel_chain_rq_version' => '1.0.0',
+            'get_hotel_list_version' => '1.0.0',
+            'domain' => 'DEFAULT',
+            'organization' => 'UC6I',
+            'username' => '986532',
+            'password' => 'WS081318',
+            'application_id' => '99999999',
+            'create_session_wsdl' => 'http://webservices.sabre.com/wsdl/sabreXML1.0.00/usg/SessionCreateRQ.wsdl',
+            'close_session_wsdl' => 'http://webservices.sabre.com/wsdl/sabreXML1.0.00/usg/SessionCloseRQ.wsdl',
+            'ignore_transaction_wsdl' => 'http://webservices.sabre.com/wsdl/tpfc/IgnoreTransactionLLS2.0.0RQ.wsdl',
+            'logs_enabled' => false,
+            'log_file' => storage_path("logs/sabrehotel_logs.xml"),
+            'client' => [
+                'timeout' => 10,
+                'debug' => false
+            ]
+        ],
+        'prod' => [
+            'endpoint' => '',
+            'ignore_transaction_rq_version' => '2.0.0',
+            'ota_hotel_avail_rq_version' => '2.3.0',
+            'ota_hotel_res_rq_version' => '2.2.0',
+            'ota_cancel_rq_version' => '2.0.2',
+            'hotel_property_description_rq_version' => '2.3.0',
+            'hotel_rate_description_rq_version' => '2.3.0',
+            'end_transactionlls_rq_version' => '2.0.8',
+            'passenger_details_rq_version' => '3.3.0',
+            'get_reservation_rq_version' => '1.17.0',
+            'get_hotel_chain_rq_version' => '1.0.0',
+            'get_hotel_list_version' => '1.0.0',
+            'domain' => '',
+            'organization' => '',
+            'username' => '',
+            'password' => '',
+            'application_id' => '',
+            'create_session_wsdl' => 'http://webservices.sabre.com/wsdl/sabreXML1.0.00/usg/SessionCreateRQ.wsdl',
+            'close_session_wsdl' => 'http://webservices.sabre.com/wsdl/sabreXML1.0.00/usg/SessionCloseRQ.wsdl',
+            'ignore_transaction_wsdl' => 'http://webservices.sabre.com/wsdl/tpfc/IgnoreTransactionLLS2.0.0RQ.wsdl',
+            'logs_enabled' => false,
+            'log_file' => storage_path("logs/sabrehotel_logs.xml"),
+
         ]
+
     ]
 
 ];

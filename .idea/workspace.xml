@@ -2,25 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="290bf3c9-95bb-47e7-952b-31e750256bea" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/laravel-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/forms/user.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lts.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lts.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTables/UsersDataTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/UsersDataTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/City.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/City.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Country.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Country.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/StateProvince.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/StateProvince.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_05_03_015800_create_roles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_05_03_015800_create_roles_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/RoleSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/RoleSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/datatables/user/columns/actions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/datatables/user/columns/actions.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/logging.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/logging.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sabrehotel.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/sabrehotel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/base.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/base.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/forms/user.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/menus/superadmin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/menus/superadmin.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/user/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,20 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/base.blade.php">
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImpersonateController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ImpersonateController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+            <state relative-caret-position="486">
+              <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
               <folding>
                 <element signature="e#40#53#0#PHP" expanded="true" />
               </folding>
@@ -57,55 +47,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="laravel.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/logs/laravel.log">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="actions.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/datatables/user/columns/actions.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserPolicy.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Policies/UserPolicy.php">
+      <file leaf-file-name="PropertyProxy.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/PropertyProxy.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="414">
-              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+              <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
               <folding>
-                <element signature="e#32#45#0#PHP" expanded="true" />
+                <element signature="e#4791#4821#0#PHP" expanded="true" />
+                <element signature="e#4923#4953#0#PHP" expanded="true" />
+                <element signature="e#5073#5103#0#PHP" expanded="true" />
+                <element signature="e#5223#5253#0#PHP" expanded="true" />
+                <element signature="e#5373#5403#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/User.php">
+      <file leaf-file-name="Proxy.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Proxy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="568">
-              <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
-              <folding>
-                <element signature="e#23#67#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="738">
+              <caret line="47" column="74" selection-start-line="47" selection-start-column="74" selection-end-line="47" selection-end-column="74" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthServiceProvider.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
+      <file leaf-file-name="sabrehotel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/sabrehotel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-              <folding>
-                <element signature="e#33#61#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="846">
+              <caret line="53" column="39" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -121,25 +92,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>adults</find>
-      <find>cancellationPolicies</find>
-      <find>dailyPrices</find>
-      <find>promotions</find>
-      <find>taxes</find>
-      <find>review</find>
-      <find>private</find>
-      <find>checkRates</find>
-      <find>exit</find>
-      <find>9G4CNzhwsK</find>
-      <find>book</find>
-      <find>yield</find>
-      <find>assets/</find>
-      <find>logout</find>
-      <find>amaru</find>
-      <find>Auth</find>
-      <find>dom</find>
-      <find>bla</find>
-      <find>Dashboard</find>
       <find>getColumn</find>
       <find>Open</find>
       <find>basic</find>
@@ -151,6 +103,25 @@
       <find>@yield</find>
       <find>logou</find>
       <find>post</find>
+      <find>page</find>
+      <find>sel</find>
+      <find>page-</find>
+      <find>col</find>
+      <find>select2</find>
+      <find>page-titl</find>
+      <find>collecti</find>
+      <find>&lt;select</find>
+      <find>check</find>
+      <find>impersona</find>
+      <find>reme</find>
+      <find>activ</find>
+      <find>Custom Button File Input</find>
+      <find>inputUserName</find>
+      <find>sex</find>
+      <find>SabreServiceProvider</find>
+      <find>cache</find>
+      <find>createSecurityHeader</find>
+      <find>generate</find>
     </findStrings>
     <replaceStrings>
       <replace>=&gt;</replace>
@@ -202,35 +173,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2018_05_28_035315_add_company_id_to_user_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_05_18_202310_add_relationships_company_country_state_city.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/database/types/CompanyType.php" />
-        <option value="$PROJECT_DIR$/database/seeds/ContinentSeeder.php" />
-        <option value="$PROJECT_DIR$/database/factories/ContinentFactory.php" />
-        <option value="$PROJECT_DIR$/database/factories/InitialFactory.php" />
-        <option value="$PROJECT_DIR$/database/factories/CountryFactory.php" />
-        <option value="$PROJECT_DIR$/database/factories/StateProvinceFactory.php" />
-        <option value="$PROJECT_DIR$/database/seeds/CompanySeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/InitialSeeder.php" />
-        <option value="$PROJECT_DIR$/database/factories/CompanyFactory.php" />
-        <option value="$PROJECT_DIR$/database/factories/CityFactory.php" />
-        <option value="$PROJECT_DIR$/app/Continent.php" />
-        <option value="$PROJECT_DIR$/app/Country.php" />
-        <option value="$PROJECT_DIR$/app/StateProvince.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_03_08_053249_create_airports_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_03_08_054450_create_geo_relationships.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_06_02_182505_add_city_id_to_airports.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_06_02_183335_add_geo_information_to_user.php" />
-        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-        <option value="$PROJECT_DIR$/database/factories/UserFactory.php" />
         <option value="$PROJECT_DIR$/config/database.php" />
         <option value="$PROJECT_DIR$/resources/views/datatables/user/columns/nameAvatarRole.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/forms/user.blade.php" />
-        <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/menus/superadmin.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/form.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/forms/user.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_05_03_015800_create_roles_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/RoleSeeder.php" />
         <option value="$PROJECT_DIR$/app/Role.php" />
@@ -241,18 +185,45 @@
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/Impersonate.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ImpersonateController.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Policies/PostPolicy.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/Access/Authorizable.php" />
         <option value="$PROJECT_DIR$/storage/logs/laravel.log" />
         <option value="$PROJECT_DIR$/app/DataTables/UsersDataTable.php" />
         <option value="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/base.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/datatables/user/columns/actions.blade.php" />
         <option value="$PROJECT_DIR$/app/Policies/UserPolicy.php" />
+        <option value="$PROJECT_DIR$/app/UserRepository.php" />
+        <option value="$PROJECT_DIR$/app/Repository/BaseRepository.php" />
+        <option value="$PROJECT_DIR$/app/Repository/UserRepository.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/resources/views/partials/forms/user.blade.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/app/City.php" />
+        <option value="$PROJECT_DIR$/app/StateProvince.php" />
+        <option value="$PROJECT_DIR$/app/Country.php" />
+        <option value="$PROJECT_DIR$/public/js/user/form.js" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/base.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/menus/superadmin.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/forms/user.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/form.blade.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Traits/ProxyTrait.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Vendor.php" />
+        <option value="$PROJECT_DIR$/config/logging.php" />
+        <option value="$PROJECT_DIR$/app/Providers/SabrePropertyProvider.php" />
+        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Container/Container.php" />
+        <option value="$PROJECT_DIR$/app/Providers/SabreServiceProvider.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Contracts/PropertyProvider.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Contracts/IPropertyProvider.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/IPropertyProxy.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/app/Providers/SabrePropertyServiceProvider.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Utils/XMLSerializer.php" />
+        <option value="$PROJECT_DIR$/config/sabrehotel.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Proxy.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/PropertyProxy.php" />
       </list>
     </option>
   </component>
@@ -325,7 +296,6 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
       <path value="$PROJECT_DIR$/vendor/symfony/console" />
       <path value="$PROJECT_DIR$/vendor/symfony/process" />
@@ -355,17 +325,21 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
       <path value="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure" />
       <path value="$PROJECT_DIR$/vendor/phpoffice/phpexcel" />
-      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
       <path value="$PROJECT_DIR$/vendor/maatwebsite/excel" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-snappy" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-snappy" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/wsdl2phpgenerator/wsdl2phpgenerator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="46" />
-    <option name="y" value="-11" />
-    <option name="width" value="1875" />
-    <option name="height" value="1092" />
+    <option name="x" value="47" />
+    <option name="y" value="-4" />
+    <option name="width" value="1873" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -375,7 +349,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -392,57 +365,36 @@
               <item name="lts" type="b2602c69:ProjectViewProjectNode" />
               <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="DataTables" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="IntegrationHub" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="lts" type="b2602c69:ProjectViewProjectNode" />
               <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="IntegrationHub" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Vendors" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="lts" type="b2602c69:ProjectViewProjectNode" />
               <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="IntegrationHub" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Vendors" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Sabre" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="lts" type="b2602c69:ProjectViewProjectNode" />
               <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Middleware" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="IntegrationHub" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Vendors" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Sabre" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="SoapMap" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="lts" type="b2602c69:ProjectViewProjectNode" />
               <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Policies" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="lts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Providers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="lts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="lts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="lts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="user" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="lts" type="b2602c69:ProjectViewProjectNode" />
@@ -459,29 +411,32 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="User&#9;FILE&#9;file:///var/www/html/lts/app/User.php&#10;UserSeede&#9;FILE&#9;file:///var/www/html/lts/database/seeds/UserSeeder.php&#10;Role&#9;FILE&#9;file:///var/www/html/lts/app/Role.php&#10;Conte&#9;FILE&#9;file:///var/www/html/lts/packages/ladonlabs/sabrehotel/src/Context.php&#10;HomeCOntroller&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="Container.php&#9;FILE&#9;file:///var/www/html/lts/vendor/laravel/framework/src/Illuminate/Container/Container.php&#10;routes/web.php&#9;FILE&#9;file:///var/www/html/lts/routes/web.php&#10;routes/api&#9;FILE&#9;file:///var/www/html/lts/routes/api.php&#10;User&#9;FILE&#9;file:///var/www/html/lts/app/User.php&#10;UserSeede&#9;FILE&#9;file:///var/www/html/lts/database/seeds/UserSeeder.php&#10;Role&#9;FILE&#9;file:///var/www/html/lts/app/Role.php&#10;Conte&#9;FILE&#9;file:///var/www/html/lts/packages/ladonlabs/sabrehotel/src/Context.php&#10;HomeCOntroller&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="INHERIT" />
-    <property name="settings.editor.selected.configurable" value="de.espend.idea.laravel.ui.TemplateSettingsForm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/database/factories" />
-      <recent name="$PROJECT_DIR$/packages/ladonlabs/hotelbeds/src/config" />
-      <recent name="$PROJECT_DIR$/packages/ladonlabs/hotelbeds/src" />
-      <recent name="$PROJECT_DIR$/packages/ladonlabs/sabrehotel" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/resources/views/partials" />
       <recent name="$PROJECT_DIR$/resources/views/datatables/user/columns" />
       <recent name="$PROJECT_DIR$/packages/ladonlabs/hotelbeds/src/Hotels/Content" />
       <recent name="$PROJECT_DIR$/packages/ladonlabs/sabrehotel/src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/IntegrationHub/Utils" />
+      <recent name="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap" />
+      <recent name="$PROJECT_DIR$/database/factories" />
+      <recent name="$PROJECT_DIR$/packages/ladonlabs/hotelbeds/src/config" />
+      <recent name="$PROJECT_DIR$/packages/ladonlabs/hotelbeds/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -549,11 +504,29 @@
       <workItem from="1529631725468" duration="5228000" />
       <workItem from="1529675153507" duration="272000" />
       <workItem from="1531013379131" duration="11029000" />
+      <workItem from="1531142159171" duration="32000" />
+      <workItem from="1531445643943" duration="10353000" />
+      <workItem from="1531488809578" duration="13000" />
+      <workItem from="1531491758470" duration="18000" />
+      <workItem from="1531534245379" duration="5134000" />
+      <workItem from="1531744587834" duration="48000" />
+      <workItem from="1533174113409" duration="8017000" />
+      <workItem from="1540695667156" duration="11798000" />
+      <workItem from="1540772461267" duration="28000" />
+      <workItem from="1540863183171" duration="702000" />
+      <workItem from="1540903417102" duration="134000" />
+      <workItem from="1541123163402" duration="11415000" />
+      <workItem from="1541162523696" duration="1018000" />
+      <workItem from="1541294175485" duration="10272000" />
+      <workItem from="1541366785494" duration="28000" />
+      <workItem from="1541728803943" duration="8559000" />
+      <workItem from="1541772033028" duration="14000" />
+      <workItem from="1542426895021" duration="3623000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214552000" />
+    <option name="totallyTimeSpent" value="285758000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="-11" width="1875" height="1092" extended-state="6" />
@@ -565,15 +538,15 @@
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.32890856" />
-      <window_info anchor="bottom" id="Terminal" order="12" />
-      <window_info anchor="bottom" id="TypeScript" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25734118" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32991803" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25573945" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.32890856" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.32889345" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TypeScript" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -601,171 +574,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/StateProvince.php">
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/PropertyProxy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Country.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Continent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_05_18_202310_add_relationships_company_country_state_city.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="28" column="59" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="285" column="20" selection-start-line="285" selection-start-column="20" selection-end-line="285" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_06_02_183335_add_geo_information_to_user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/InitialSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_05_03_023155_create_roles_user_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="358" column="55" selection-start-line="358" selection-start-column="14" selection-end-line="358" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Collection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yajra/laravel-datatables-oracle/src/DataTableAbstract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3456">
-          <caret line="201" column="20" selection-start-line="201" selection-start-column="20" selection-end-line="201" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yajra/laravel-datatables-html/src/Html/Builder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="440" column="20" selection-start-line="440" selection-start-column="20" selection-end-line="440" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../beagle/BS4/dist/html/tables-filters.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9612">
-          <caret line="534" column="34" selection-start-line="529" selection-start-column="27" selection-end-line="534" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9918">
-          <caret line="551" column="9" selection-start-line="551" selection-start-column="9" selection-end-line="551" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="52" column="30" lean-forward="true" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="234" column="20" selection-start-line="234" selection-start-column="20" selection-end-line="234" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="1175" column="20" selection-start-line="1175" selection-start-column="20" selection-end-line="1175" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/datatables/user/columns/nameAvatarRole.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3978">
-          <caret line="221" column="52" selection-start-line="221" selection-start-column="52" selection-end-line="221" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../beagle/BS4/dist/html/form-elements.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15228">
-          <caret line="846" column="30" selection-start-line="843" selection-start-column="24" selection-end-line="846" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/forms/user.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="76" column="10" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
+        <state relative-caret-position="2106">
+          <caret line="117" column="14" lean-forward="true" selection-start-line="117" selection-start-column="14" selection-end-line="117" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -776,29 +588,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_05_03_015800_create_roles_table.php">
+    <entry file="file://$PROJECT_DIR$/../beagle/BS4/dist/html/form-validation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-465" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/menus/user.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="70" selection-start-line="1" selection-start-column="70" selection-end-line="1" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Role.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="66" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
+        <state relative-caret-position="297">
+          <caret line="325" column="47" selection-start-line="325" selection-start-column="34" selection-end-line="325" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -811,167 +604,317 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/UserSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+        <state relative-caret-position="450">
+          <caret line="25" column="46" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/menus/superadmin.blade.php">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Impersonate.php">
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-          <folding>
-            <element signature="e#39#51#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="-117">
+          <caret line="670" column="13" selection-start-line="670" selection-start-column="13" selection-end-line="670" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/user/form.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="766">
-          <caret line="59" column="77" lean-forward="true" selection-start-line="59" selection-start-column="77" selection-end-line="59" selection-end-column="77" />
+        <state relative-caret-position="720">
+          <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/RoleSeeder.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/forms/user.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+        <state relative-caret-position="1422">
+          <caret line="79" column="75" selection-start-line="79" selection-start-column="75" selection-end-line="79" selection-end-column="75" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Cache/Factory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/CacheManager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Controller.php">
+    <entry file="file://$PROJECT_DIR$/app/Contracts/HotelProviderInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="154" column="13" selection-start-line="154" selection-start-column="13" selection-end-line="154" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Traits/ProxyTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/SabreServiceProvider.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/CacheServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="24" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/ladonlabs/hotelbeds/src/HotelBedsServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="35" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Container/Container.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="620" column="20" lean-forward="true" selection-start-line="620" selection-start-column="20" selection-end-line="620" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Contracts/IPropertyProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/ladonlabs/hotelbeds/src/Client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-265" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/ladonlabs/hotelbeds/src/HotelBedsProxy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-611">
+          <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/ladonlabs/sabrehotel/src/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-139" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/ladonlabs/sabrehotel/src/SabrePropertyProxy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/RouteServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-427">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Input.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/logging.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="49" column="14" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Log/Logger.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="227" column="49" lean-forward="true" selection-start-line="227" selection-start-column="49" selection-end-line="227" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+    <entry file="file://$PROJECT_DIR$/app/Providers/SabrePropertyServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        <state relative-caret-position="419">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/Access/Authorizable.php">
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/WsdlTypes/POS.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="208">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/User.php">
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Utils/XMLSerializer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding>
-            <element signature="e#46#82#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="36">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/WsdlTypes/SessionCreateRQ.php" />
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/WsdlTypes/SessionCreateRQService.php" />
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Proxy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" column="86" selection-start-line="29" selection-start-column="86" selection-end-line="29" selection-end-column="86" />
+        <state relative-caret-position="738">
+          <caret line="47" column="74" selection-start-line="47" selection-start-column="74" selection-end-line="47" selection-end-column="74" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/storage/logs/laravel.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/DataTables/UsersDataTable.php">
+    <entry file="file://$PROJECT_DIR$/config/sabrehotel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#34#47#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="846">
+          <caret line="53" column="39" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/WsdlTypes/Award.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/WsdlTypes/Source.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/WsdlTypes/AvailRequestSegment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/WsdlTypes/Criterion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/WsdlTypes/RatePlanCandidates.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/WsdlTypes/AdditionalAvail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/WsdlTypes/BookingChannel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/WsdlTypes/HotelRef.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/WsdlTypes/RateAccessCode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/WsdlTypes/TimeSpan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ImpersonateController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        <state relative-caret-position="486">
+          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
           <folding>
             <element signature="e#40#53#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-          <folding>
-            <element signature="e#33#61#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/base.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/datatables/user/columns/actions.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Policies/UserPolicy.php">
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/PropertyProxy.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
           <folding>
-            <element signature="e#32#45#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
-          <folding>
-            <element signature="e#23#67#0#PHP" expanded="true" />
+            <element signature="e#4791#4821#0#PHP" expanded="true" />
+            <element signature="e#4923#4953#0#PHP" expanded="true" />
+            <element signature="e#5073#5103#0#PHP" expanded="true" />
+            <element signature="e#5223#5253#0#PHP" expanded="true" />
+            <element signature="e#5373#5403#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

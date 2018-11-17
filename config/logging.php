@@ -47,6 +47,12 @@ return [
             'level' => 'debug',
             'days' => 7,
         ],
+        'sabre' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/sabre.log'),
+            'level' => 'debug',
+            'days' => 7,
+        ],
 
         'slack' => [
             'driver' => 'slack',
