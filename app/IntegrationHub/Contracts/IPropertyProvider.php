@@ -12,6 +12,8 @@ namespace App\IntegrationHub\Contracts;
 
 interface IPropertyProvider
 {
+    const SABRE_PROPERTY_PROVIDER='SABRE';
+
     /**
      * Get available properties with the given parameters
      * @param $params

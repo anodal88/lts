@@ -31,7 +31,7 @@ use Monolog\Logger;
 use Wsdl2PhpGenerator\Config;
 use Wsdl2PhpGenerator\Generator;
 
-class PropertyProxy extends Proxy implements IPropertyProvider
+class SabrePropertyProxy extends Proxy implements IPropertyProvider
 {
     use ProxyTrait;
 
@@ -57,7 +57,7 @@ class PropertyProxy extends Proxy implements IPropertyProvider
      * PropertyProxy constructor.
      * @param array $config
      */
-    public function __construct(array $config)
+    public function __construct(array $config=[])
     {
         $this->config = $config;
         $this->logger = Log::channel('sabre');
@@ -102,7 +102,7 @@ class PropertyProxy extends Proxy implements IPropertyProvider
             $request = new OTA_HotelAvailRQ($availabilitySegment, true, new \DateTime(), $version);
             /** @var OTA_HotelAvailRS $response */
             $response = $service->OTA_HotelAvailRQ($request);
-            return $response;
+            return $this->availabilityPropertyListFromSabre($response) ;
         } catch (\Exception $e) {
             dd($service->__getLastRequest(),$service->__getLastResponse());
         }
