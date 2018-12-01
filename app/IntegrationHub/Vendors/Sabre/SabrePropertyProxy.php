@@ -2,7 +2,7 @@
 /**
  * Created by PhpStorm.
  * User: Antonio Nodal
- * Email: <anodal@reloquest.com>
+ * Email: <antonio.nodal88@gmail.com>
  * Date: 11/1/18
  * Time: 10:07 PM
  */
@@ -13,6 +13,7 @@ namespace App\IntegrationHub\Vendors\Sabre;
 use App\IntegrationHub\Contracts\IPropertyProvider;
 use App\IntegrationHub\Proxy;
 use App\IntegrationHub\Traits\ProxyTrait;
+use App\IntegrationHub\Traits\SabrePropertyTrait;
 use App\IntegrationHub\Utils\XMLSerializer;
 use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\AvailRequestSegment;
 use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\Criterion;
@@ -33,7 +34,7 @@ use Wsdl2PhpGenerator\Generator;
 
 class SabrePropertyProxy extends Proxy implements IPropertyProvider
 {
-    use ProxyTrait;
+    use ProxyTrait,SabrePropertyTrait;
 
     /** @var string */
     protected $endpoint;
@@ -104,7 +105,7 @@ class SabrePropertyProxy extends Proxy implements IPropertyProvider
             $response = $service->OTA_HotelAvailRQ($request);
             return $this->availabilityPropertyListFromSabre($response) ;
         } catch (\Exception $e) {
-            dd($service->__getLastRequest(),$service->__getLastResponse());
+            dd($e,$service->__getLastRequest(),$service->__getLastResponse());
         }
 
     }

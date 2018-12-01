@@ -2,7 +2,7 @@
 /**
  * Created by PhpStorm.
  * User: Antonio Nodal
- * Email: <anodal@reloquest.com>
+ * Email: <antonio.nodal88@gmail.com>
  * Date: 11/1/18
  * Time: 10:23 PM
  */

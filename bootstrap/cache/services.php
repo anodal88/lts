@@ -45,6 +45,7 @@
     41 => 'App\\Providers\\EventServiceProvider',
     42 => 'App\\Providers\\RouteServiceProvider',
     43 => 'App\\Providers\\SabrePropertyServiceProvider',
+    44 => 'App\\Providers\\JmsSerializerServiceProvider',
   ),
   'eager' => 
   array (
@@ -76,6 +77,7 @@
     25 => 'App\\Providers\\EventServiceProvider',
     26 => 'App\\Providers\\RouteServiceProvider',
     27 => 'App\\Providers\\SabrePropertyServiceProvider',
+    28 => 'App\\Providers\\JmsSerializerServiceProvider',
   ),
   'deferred' => 
   array (

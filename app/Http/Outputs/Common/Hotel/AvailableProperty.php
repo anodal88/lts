@@ -1,6 +1,6 @@
 <?php
 
-namespace App\IntegrationHub\Common\Hotel;
+namespace App\Http\Outputs\Common\Hotel;
 
 use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\AvailabilityOption;
 

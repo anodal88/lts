@@ -2,15 +2,17 @@
 /**
  * Created by PhpStorm.
  * User: Antonio Nodal
- * Email: <anodal@reloquest.com>
+ * Email: <antonio.nodal88@gmail.com>
  * Date: 11/18/18
  * Time: 9:20 PM
  */
 
-namespace App\IntegrationHub\Common;
+namespace App\Http\Outputs\Common\Hotel;
 
 
-use App\IntegrationHub\Common\Hotel\AvailableProperty;
+use App\Http\Outputs\BaseResponse;
+use App\Http\Outputs\Common\AvailableProperty;
+
 
 class AvailabilityResponse extends BaseResponse
 {
@@ -37,6 +39,7 @@ class AvailabilityResponse extends BaseResponse
         $this->properties = $properties;
         return $this;
     }
+
 
 
 }

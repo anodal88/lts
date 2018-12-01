@@ -167,6 +167,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\SabrePropertyServiceProvider::class,
+        App\Providers\JmsSerializerServiceProvider::class
 
 
 

@@ -2,17 +2,19 @@
 /**
  * Created by PhpStorm.
  * User: Antonio Nodal
- * Email: <anodal@reloquest.com>
+ * Email: <antonio.nodal88@gmail.com>
  * Date: 11/18/18
  * Time: 9:18 PM
  */
 
-namespace App\IntegrationHub\Common;
+namespace App\Http\Outputs;
 
 
 use Illuminate\Database\Eloquent\Model;
+use JMS\Serializer\Annotation as Serializer;
 
-class BaseResponse extends Model
+
+class BaseResponse
 {
 
     /**
@@ -60,6 +62,8 @@ class BaseResponse extends Model
         $this->errors = $errors;
         return $this;
     }
+
+
 
 
 }
