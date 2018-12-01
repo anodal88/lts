@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\City;
 use App\Company;
 use App\DataTables\UsersDataTable;
-use App\IntegrationHub\Vendors\Sabre\PropertyProxy;
+use App\IntegrationHub\Vendors\Sabre\SabrePropertyProxy;
 use App\Providers\SabrePropertyServiceProvider;
 use App\Repository\UserRepository;
 use App\Role;
@@ -20,7 +20,7 @@ class UserController extends Controller
 
     private $sabrProxy;
 
-    public function __construct(UserRepository $userRepository, PropertyProxy $proxy)
+    public function __construct(UserRepository $userRepository, SabrePropertyProxy $proxy)
     {
         $this->repo = $userRepository;
         $this->sabrProxy = $proxy;
@@ -42,9 +42,7 @@ class UserController extends Controller
         return view('user.form',['roles'=>$roles,'companies'=>$companies,'cities'=>$cities]);
     }
 
-    public function generatewsdl(){
 
-    }
 
     public function store(Request $request)
     {

@@ -2,7 +2,7 @@
 /**
  * Created by PhpStorm.
  * User: Antonio Nodal
- * Email: <anodal@reloquest.com>
+ * Email: <antonio.nodal88@gmail.com>
  * Date: 11/1/18
  * Time: 10:07 PM
  */
@@ -13,6 +13,7 @@ namespace App\IntegrationHub\Vendors\Sabre;
 use App\IntegrationHub\Contracts\IPropertyProvider;
 use App\IntegrationHub\Proxy;
 use App\IntegrationHub\Traits\ProxyTrait;
+use App\IntegrationHub\Traits\SabrePropertyTrait;
 use App\IntegrationHub\Utils\XMLSerializer;
 use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\AvailRequestSegment;
 use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\Criterion;
@@ -31,9 +32,9 @@ use Monolog\Logger;
 use Wsdl2PhpGenerator\Config;
 use Wsdl2PhpGenerator\Generator;
 
-class PropertyProxy extends Proxy implements IPropertyProvider
+class SabrePropertyProxy extends Proxy implements IPropertyProvider
 {
-    use ProxyTrait;
+    use ProxyTrait,SabrePropertyTrait;
 
     /** @var string */
     protected $endpoint;
@@ -57,7 +58,7 @@ class PropertyProxy extends Proxy implements IPropertyProvider
      * PropertyProxy constructor.
      * @param array $config
      */
-    public function __construct(array $config)
+    public function __construct(array $config=[])
     {
         $this->config = $config;
         $this->logger = Log::channel('sabre');
@@ -102,9 +103,9 @@ class PropertyProxy extends Proxy implements IPropertyProvider
             $request = new OTA_HotelAvailRQ($availabilitySegment, true, new \DateTime(), $version);
             /** @var OTA_HotelAvailRS $response */
             $response = $service->OTA_HotelAvailRQ($request);
-            return $response;
+            return $this->availabilityPropertyListFromSabre($response) ;
         } catch (\Exception $e) {
-            dd($service->__getLastRequest(),$service->__getLastResponse());
+            dd($e,$service->__getLastRequest(),$service->__getLastResponse());
         }
 
     }

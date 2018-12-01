@@ -16,3 +16,14 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::middleware(['auth:api'])->group(function(){
+
+    //Hotel Routes
+    Route::prefix('properties')->group(function(){
+
+        Route::get('sabre/search', 'Sabre\SabrePropertyController@search')->name('sabre.property.search');
+
+    });
+
+});

@@ -2,7 +2,7 @@
 /**
  * Created by PhpStorm.
  * User: Antonio Nodal
- * Email: <anodal@reloquest.com>
+ * Email: <antonio.nodal88@gmail.com>
  * Date: 11/1/18
  * Time: 9:58 PM
  */
@@ -12,6 +12,8 @@ namespace App\IntegrationHub\Contracts;
 
 interface IPropertyProvider
 {
+    const SABRE_PROPERTY_PROVIDER='SABRE';
+
     /**
      * Get available properties with the given parameters
      * @param $params

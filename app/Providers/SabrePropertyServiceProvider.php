@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use App\IntegrationHub\Contracts\IPropertyProvider;
-use App\IntegrationHub\Vendors\Sabre\PropertyProxy;
+use App\IntegrationHub\Vendors\Sabre\SabrePropertyProxy;
 use Illuminate\Foundation\Application;
 use Auth;
 use Illuminate\Support\ServiceProvider;
@@ -16,7 +16,7 @@ class SabrePropertyServiceProvider extends ServiceProvider
         parent::__construct($app);
     }
 
-    protected $defer=true;
+
     /**
      * Bootstrap services.
      *
@@ -24,7 +24,7 @@ class SabrePropertyServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
+      
     }
 
     /**
@@ -35,8 +35,8 @@ class SabrePropertyServiceProvider extends ServiceProvider
     public function register()
     {
 
-        $this->app->singleton(PropertyProxy::class, function ($app) {
-            return new PropertyProxy(config('sabrehotel'));
+        $this->app->singleton(SabrePropertyProxy::class, function ($app) {
+            return new SabrePropertyProxy(config('sabrehotel'));
         });
 
         //$this->app->bind(IPropertyProvider::class, PropertyProxy::class);
