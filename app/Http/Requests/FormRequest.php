@@ -16,8 +16,15 @@ use Illuminate\Validation\ValidationException;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Foundation\Http\FormRequest as LaravelFormRequest;
+use JMS\Serializer\Serializer;
 abstract class FormRequest extends LaravelFormRequest
 {
+    /** @var Serializer $serializer */
+    protected $serializer;
+
+    public function __construct(Serializer $serializer){
+        $this->serializer = $serializer;
+    }
     /**
      * Get the validation rules that apply to the request.
      *
@@ -42,6 +49,7 @@ abstract class FormRequest extends LaravelFormRequest
     {
         $errors = (new ValidationException($validator))->errors();
         $errorApiResponse = (new BaseResponse())->setSuccess(false)->setErrors($errors);
-        throw new HttpResponseException(response()->json($errorApiResponse, JsonResponse::HTTP_UNPROCESSABLE_ENTITY));
+
+        throw new HttpResponseException(response()->json($this->serializer->toArray($errorApiResponse), JsonResponse::HTTP_UNPROCESSABLE_ENTITY));
     }
 }

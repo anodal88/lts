@@ -26,8 +26,8 @@ class SabrePropertyController extends Controller
     }
 
     public function search(SearchAvailabilityFormRequest $request){
-        //$data = $request->validated();
-        //dd($data);
+        $data = $request->validated();
+        dd($data);
         $properties = $this->propertyProxy->search([]);
         $dataResponse = (new AvailabilityResponse())->setSuccess(true)->setProperties($properties);
         $data = $this->serializer->toArray($dataResponse);
