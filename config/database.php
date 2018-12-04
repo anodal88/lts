@@ -52,6 +52,7 @@ return [
             'prefix' => '',
             'strict' => false,
             'engine' => null,
+
         ],
         'hbeds' => [
             'driver' => 'mysql',
@@ -67,7 +68,20 @@ return [
             'strict' => true,
             'engine' => null,
         ],
-
+        'sabre' => [
+            'driver' => 'mysql',
+            'host' =>     env('DB_SABRE_HOST', '127.0.0.1'),
+            'port' =>     env('DB_SABRE_PORT', '3306'),
+            'database' => env('DB_SABRE_DATABASE', 'hotelbeds'),
+            'username' => env('DB_SABRE_USERNAME', ''),
+            'password' => env('DB_HBEDS_PASSWORD', ''),
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+            'engine' => null,
+        ],
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', '127.0.0.1'),
