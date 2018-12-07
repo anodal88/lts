@@ -33,8 +33,8 @@ class SabrePropertyController extends Controller
 
     public function search(SearchAvailabilityFormRequest $request){
         $data = $request->validated();
-        dd($data,$this->repository->getHotelCodeList());
-        $properties = $this->propertyProxy->search([]);
+        $data['property_codes'] = $this->repository->getHotelCodeList();
+        $properties = $this->propertyProxy->search($data);
         $dataResponse = (new AvailabilityResponse())->setSuccess(true)->setProperties($properties);
         $data = $this->serializer->toArray($dataResponse);
         return JsonResponse::create($data,Response::HTTP_OK);

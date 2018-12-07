@@ -29,46 +29,49 @@ trait SabrePropertyTrait
      * @param OTA_HotelAvailRS $response
      * @return array
      */
-    public function availabilityPropertyListFromSabre(OTA_HotelAvailRS $response)
+    public function availabilityPropertyListFromSabre($response,array $imgByCodes=[])
     {
         $properties = [];
 
-        $success = $response->getApplicationResults()->getSuccess() ?? false;
-        $availableOptions = $response->getAvailabilityOptions()->getAvailabilityOption() ?? [];
+        $success = data_get($response,'ApplicationResults.Success',false) ?true:false;
+        $availableOptions = data_get($response,'AvailabilityOptions.AvailabilityOption',[]);
 
         if ($success) {
-            /** @var AvailabilityOption $option */
             foreach ($availableOptions as $option) {
-                /** @var BasicPropertyInfo $basicInfo */
-                $basicInfo = $option->getBasicPropertyInfo();
-                if (!$basicInfo->getRateRange()) {
+                $basicInfo = data_get($option,'BasicPropertyInfo',null);
+                $rateRange =$basicInfo->RateRange??null;
+                if (!$rateRange) {
                     continue;
                 }
-                $address = implode(', ', $basicInfo->getAddress()->getAddressLine());
+                $addressLines =  $basicInfo->Address->AddressLine ?? [];
+                $address = implode(', ',$addressLines);
+
                 /** @var array $propertyArray */
-                $propertyArray = $basicInfo->getProperty() ?? null;
-                $starsText = $propertyArray[0] ? $propertyArray[0]->getText() : null;
+                $propertyArray = $basicInfo->Property ?? null;
+                $starsText = $propertyArray[0] ? $propertyArray[0]->Text : null;
                 $stars = $starsText ? substr($starsText, 0, 1) : -1;
                 $item = new AvailableProperty();
                 $amenities = [];
-                /** @var PropertyOptionInfo $amenitiesNode */
-                $amenitiesNode = $basicInfo->getPropertyOptionInfo();
+
+                $amenitiesNode = $basicInfo->PropertyOptionInfo;
                 if ($amenitiesNode) {
                     foreach ($this->getSabreAmenityDefinitions() as $amenityName) {
-                        $methodName = "get{$amenityName}";
-                        if (is_callable(array($amenitiesNode, $methodName)) && $amenitiesNode->$methodName()->getInd()) {
+                        $exist = ($amenitiesNode->$amenityName)->Ind;
+                        if ($exist) {
                             $amenities[] = $amenityName;
                         }
                     }
                 }
-                $item->setName($basicInfo->getHotelName())
+                $hotelCode = (int)$basicInfo->HotelCode;
+                $item->setName($basicInfo->HotelName)
+                    ->setPhoto($imgByCodes[$hotelCode])
                     ->setAddress($address)
-                    ->setLatitude($basicInfo->getLatitude())
-                    ->setLongitude($basicInfo->getLongitude())
-                    ->setPropertyCode($basicInfo->getHotelCode())
+                    ->setLatitude($basicInfo->Latitude)
+                    ->setLongitude($basicInfo->Longitude)
+                    ->setPropertyCode($hotelCode)
                     ->setRating($stars)
-                    ->setCurrency($basicInfo->getRateRange()->getCurrencyCode())
-                    ->setPrice($basicInfo->getRateRange()->getMin())
+                    ->setCurrency($rateRange->CurrencyCode)
+                    ->setPrice($rateRange->Min)
                     ->setProviderCode(IPropertyProvider::SABRE_PROPERTY_PROVIDER)
                     ->setAmenities($amenities);
                 $properties[] = $item;
@@ -137,5 +140,22 @@ trait SabrePropertyTrait
             'WaterPurificationSystem',
             'Wheelchair',
         ];
+    }
+
+    /**
+     * Due to SABRE don't allow to search multiple availabilities at the same time
+     * we ave the total amount of guest by each room
+     * @param $rooms
+     * @return float
+     */
+    public function getGuestsCount(array $rooms)
+    {
+        $guestCount = 0;
+        foreach ($rooms as $r) {
+            $guest = explode(',', $r);
+            $guestCount += $guest[0];
+        }
+
+        return round($guestCount / count($rooms), 0);
     }
 }

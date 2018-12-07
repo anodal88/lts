@@ -14,19 +14,9 @@ use App\IntegrationHub\Contracts\IPropertyProvider;
 use App\IntegrationHub\Proxy;
 use App\IntegrationHub\Traits\ProxyTrait;
 use App\IntegrationHub\Traits\SabrePropertyTrait;
+use App\IntegrationHub\Utils\SabreSoapClient;
+use App\IntegrationHub\Utils\SoapClientWrapper;
 use App\IntegrationHub\Utils\XMLSerializer;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\AvailRequestSegment;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\Criterion;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\GuestCounts;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\HotelRef;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\HotelSearchCriteria;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\OTA_HotelAvailRQ;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\OTA_HotelAvailRS;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\OTA_HotelAvailService;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\SessionCreateRQ;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\SessionCreateRQService;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\SessionCreateRS;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\TimeSpan;
 use Illuminate\Support\Facades\Log;
 use Monolog\Logger;
 use Wsdl2PhpGenerator\Config;
@@ -51,7 +41,16 @@ class SabrePropertyProxy extends Proxy implements IPropertyProvider
     protected $logger;
 
     const WSDL_CREATE_SESSION = "http://webservices.sabre.com/wsdl/sabreXML1.0.00/usg/SessionCreateRQ.wsdl";
-    const WSDL_OTA_HOTELAVAIL = "http://webservices.sabre.com/wsdl/tpfc/OTA_HotelAvailLLS2.3.0RQ.wsdl";
+    const WSDL_OTA_HOTEL_AVAIL = "http://webservices.sabre.com/wsdl/tpfc/OTA_HotelAvailLLS2.3.0RQ.wsdl";
+    const WSDL_HOTEL_PROPERTY_DESCRIPTION = "http://webservices.sabre.com/wsdl/tpfc/HotelPropertyDescriptionLLS2.3.0RQ.wsdl";
+    const WSDL_HOTEL_RATE_DESCRIPTION = "http://webservices.sabre.com/wsdl/tpfc/HotelRateDescriptionLLS2.3.0RQ.wsdl";
+    const WSDL_PASSENGER_NAME_RECORD = "http://files.developer.sabre.com/wsdl/sabreXML1.0.00/ServicesPlatform/PassengerDetails3.3.0RQ.wsdl";
+    const WSDL_HOTEL_RES = "http://webservices.sabre.com/wsdl/tpfc/OTA_HotelResLLS2.2.0RQ.wsdl";
+    const WSDL_END_TRANSACTION = "http://webservices.sabre.com/wsdl/tpfc/EndTransactionLLS2.0.9RQ.wsdl";
+    const WSDL_GET_RESERVATION = "http://files.developer.sabre.com/wsdl/sabreXML1.0.00/pnrservices/GetReservation_1.19.0.wsdl";
+    const WSDL_CANCEL_RESERVATION = "http://webservices.sabre.com/wsdl/tpfc/OTA_CancelLLS2.0.2RQ.wsdl";
+
+
     const  token = "Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/ACPCRTD!ICESMSLB\/CRT.LB!1541737629814!171198!262145";
 
     /**
@@ -71,6 +70,24 @@ class SabrePropertyProxy extends Proxy implements IPropertyProvider
         $this->domain = $this->getConfigValue($config, 'soap.dev.domain', true, '');
     }
 
+    /**
+     * Returl a list of all wsdl address
+     * @return array
+     */
+    public function getWsdlSources(){
+        return [
+            self::WSDL_CREATE_SESSION,
+            self::WSDL_OTA_HOTEL_AVAIL,
+            self::WSDL_HOTEL_PROPERTY_DESCRIPTION,
+            self::WSDL_HOTEL_RATE_DESCRIPTION,
+            self::WSDL_PASSENGER_NAME_RECORD,
+            self::WSDL_HOTEL_RES,
+            self::WSDL_END_TRANSACTION,
+            self::WSDL_GET_RESERVATION,
+            self::WSDL_CANCEL_RESERVATION
+        ];
+    }
+
     private function getOptions()
     {
         return [
@@ -87,28 +104,46 @@ class SabrePropertyProxy extends Proxy implements IPropertyProvider
      */
     public function search($params)
     {
-        $service = new OTA_HotelAvailService($this->getOptions(), self::WSDL_OTA_HOTELAVAIL);
+        $service = new SabreSoapClient(self::WSDL_OTA_HOTEL_AVAIL,$this->getOptions());
         try {
+            $rooms = $params['occupancy'];
+            $guestCount = $this->getGuestsCount($rooms);
+
             $service->__setSoapHeaders([$this->createMessageHeader("OTA_HotelAvailLLSRQ"), $this->createSecurityHeader()]);
             $version = $this->getOtaAvailVersion();
-            $guests = new GuestCounts(2);
-            $geoRefNode = new HotelRef();
-            $geoRefNode->setUnitOfMeasure("MI")->setLatitude(25.76)->setLongitude(-80.18);
-            $criterion = new Criterion();
-            $criterion->setHotelRef($geoRefNode);
-            $criteria = new HotelSearchCriteria($criterion, 100);
-            $dates = new TimeSpan('2019-01-20', '2019-01-19');
-            $availabilitySegment = new AvailRequestSegment();
-            $availabilitySegment->setGuestCounts($guests)->setHotelSearchCriteria($criteria)->setTimeSpan($dates);
-            $request = new OTA_HotelAvailRQ($availabilitySegment, true, new \DateTime(), $version);
-            /** @var OTA_HotelAvailRS $response */
-            $response = $service->OTA_HotelAvailRQ($request);
-            return $this->availabilityPropertyListFromSabre($response) ;
+            $hotelCodesAndImages = $params['property_codes']??[];
+
+            $criterion = [];
+            foreach ($hotelCodesAndImages as $hotelCode =>$image){
+                $criterion['HotelRef'][]=['HotelCode'=>$hotelCode];
+            }
+
+            $body =[
+                    'Version'=>$version,
+                    'AvailRequestSegment'=>[
+                        'GuestCounts'=>[
+                            'Count'=>$guestCount
+                        ],
+                        'HotelSearchCriteria'=>[
+                            'Criterion'=>$criterion,
+                            'NumProperties'=>100
+                        ],
+                        'TimeSpan'=>[
+                            'End'=>'2019-01-20',
+                            'Start'=>'2019-01-19'
+                        ]
+                    ]
+            ];
+            $response = $service->OTA_HotelAvailRQ($body);
+
+            return $this->availabilityPropertyListFromSabre($response,$hotelCodesAndImages) ;
         } catch (\Exception $e) {
-            dd($e,$service->__getLastRequest(),$service->__getLastResponse());
+            dd($e->getMessage()/*,$body,$service->__getLastRequest(),$service->__getLastResponse()*/);
         }
 
     }
+
+
 
     /**
      * @inheritDoc
@@ -161,20 +196,34 @@ class SabrePropertyProxy extends Proxy implements IPropertyProvider
 
 
     /**
-     * Generate the WSDL types for availability session
+     * Generate all mapping types from wsdl resources
      */
-    public function generateOTAvailWsdlTypeClasses()
+    public function generateWsdlTypeClasses()
     {
         $generator = new Generator();
-        $generator->generate(
-            new Config(array(
-                'inputFile' => self::WSDL_OTA_HOTELAVAIL,
-                'outputDir' => dirname(__FILE__) . '/SoapMap/OTA_HotelAvailRQ',
-                'namespaceName' => "App\\IntegrationHub\\Vendors\\Sabre\\SoapMap\\OTA_HotelAvailRQ",
-                'constructorParamsDefaultToNull' => true,
-            ))
-        );
+        $wsdls=$this->getWsdlSources();
+
+        $config = new Config(array(
+            'inputFile'=>null,
+            'outputDir' => dirname(__FILE__) . '/SoapMap',
+            'namespaceName' => "App\\IntegrationHub\\Vendors\\Sabre\\SoapMap",
+            'constructorParamsDefaultToNull' => true,
+            'sharedTypes'=>true,
+            'soapClientClass'=>"\\App\\IntegrationHub\\Utils\\SoapClientWrapper"
+        ));
+
+        foreach ($wsdls as $ws){
+            try{
+                $config->set('inputFile',$ws);
+                $generator->generate($config);
+                unlink($config->get('outputDir') . '/autoload.php');
+            }catch(\Exception $e){
+               dump("Error generating wsdl types for input file: {$ws}, error text: {$e->getMessage()}, {$e->getFile()},{$e->getLine()}");
+            }
+        }
+
     }
+
 
     /**
      * Creates the Authentication header necessary for communication
