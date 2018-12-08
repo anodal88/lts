@@ -34,8 +34,8 @@ class UserController extends Controller
 
     public function create()
     {
-        dump($this->sabrProxy->search([]));exit;
-        return $this->sabrProxy->generateOTAvailWsdlTypeClasses();
+        //dump($this->sabrProxy->search([]));exit;
+        return $this->sabrProxy->generateWsdlTypeClasses();
         $roles = Role::all()->pluck('name','id');
         $companies = Company::all()->pluck('name','id');
         $cities = City::all()->pluck('name','id');

@@ -10,16 +10,19 @@
 namespace App\IntegrationHub\Contracts;
 
 
+use App\Http\Outputs\Common\Hotel\AvailabilityResponse;
+
 interface IPropertyProvider
 {
     const SABRE_PROPERTY_PROVIDER='SABRE';
 
+
     /**
-     * Get available properties with the given parameters
+     *  Get available properties with the given parameters
      * @param $params
-     * @return mixed
+     * @return AvailabilityResponse
      */
-    public function search($params);
+    public function search($params):AvailabilityResponse;
 
     /**
      * Get the property associated information

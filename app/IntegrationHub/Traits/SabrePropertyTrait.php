@@ -10,12 +10,10 @@
 namespace App\IntegrationHub\Traits;
 
 
+use App\Http\Outputs\Common\Hotel\AvailabilityResponse;
 use App\Http\Outputs\Common\Hotel\AvailableProperty;
 use App\IntegrationHub\Contracts\IPropertyProvider;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\AvailabilityOption;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\BasicPropertyInfo;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\OTA_HotelAvailRS;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\PropertyOptionInfo;
+
 
 /**
  * Trait SabrePropertyTrait
@@ -23,59 +21,15 @@ use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\PropertyOptionInfo
  */
 trait SabrePropertyTrait
 {
-
     /**
-     * Return The Sabre Availability on the response converted to the common format
-     * @param OTA_HotelAvailRS $response
-     * @return array
+     * @param mixed $response
+     * @return bool
      */
-    public function availabilityPropertyListFromSabre(OTA_HotelAvailRS $response)
+    public function isResponseSuccess($response):bool
     {
-        $properties = [];
-
-        $success = $response->getApplicationResults()->getSuccess() ?? false;
-        $availableOptions = $response->getAvailabilityOptions()->getAvailabilityOption() ?? [];
-
-        if ($success) {
-            /** @var AvailabilityOption $option */
-            foreach ($availableOptions as $option) {
-                /** @var BasicPropertyInfo $basicInfo */
-                $basicInfo = $option->getBasicPropertyInfo();
-                if (!$basicInfo->getRateRange()) {
-                    continue;
-                }
-                $address = implode(', ', $basicInfo->getAddress()->getAddressLine());
-                /** @var array $propertyArray */
-                $propertyArray = $basicInfo->getProperty() ?? null;
-                $starsText = $propertyArray[0] ? $propertyArray[0]->getText() : null;
-                $stars = $starsText ? substr($starsText, 0, 1) : -1;
-                $item = new AvailableProperty();
-                $amenities = [];
-                /** @var PropertyOptionInfo $amenitiesNode */
-                $amenitiesNode = $basicInfo->getPropertyOptionInfo();
-                if ($amenitiesNode) {
-                    foreach ($this->getSabreAmenityDefinitions() as $amenityName) {
-                        $methodName = "get{$amenityName}";
-                        if (is_callable(array($amenitiesNode, $methodName)) && $amenitiesNode->$methodName()->getInd()) {
-                            $amenities[] = $amenityName;
-                        }
-                    }
-                }
-                $item->setName($basicInfo->getHotelName())
-                    ->setAddress($address)
-                    ->setLatitude($basicInfo->getLatitude())
-                    ->setLongitude($basicInfo->getLongitude())
-                    ->setPropertyCode($basicInfo->getHotelCode())
-                    ->setRating($stars)
-                    ->setCurrency($basicInfo->getRateRange()->getCurrencyCode())
-                    ->setPrice($basicInfo->getRateRange()->getMin())
-                    ->setProviderCode(IPropertyProvider::SABRE_PROPERTY_PROVIDER)
-                    ->setAmenities($amenities);
-                $properties[] = $item;
-            }
-        }
-        return $properties;
+        return data_get($response, 'ApplicationResults.Success', false) ? true : false;
     }
+
 
     /**
      * Return the list of amenities defined for SABRE properties
@@ -138,4 +92,12 @@ trait SabrePropertyTrait
             'Wheelchair',
         ];
     }
+
+    public function extractErrors($response){}
+
+    public function extractWarnings($response){}
+
+
+
+
 }

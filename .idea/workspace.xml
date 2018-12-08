@@ -2,110 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="290bf3c9-95bb-47e7-952b-31e750256bea" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/01/5b4170705c487474705c4f7574707574735c42617365526573706f6e7365237365744572726f72735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/02/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f706572747923736574416d656e69746965735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/02/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f706572747924616464726573735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/07/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792373657450726f7065727479436f64655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/08/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792367657450686f746f5d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/09/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f7065727479236765744c617469747564655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/12/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f7065727479236765744c6f6e6769747564655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/15/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792367657443757272656e63795d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/15/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f7065727479236765744c6f6e6769747564655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/16/5b5b435d4170705c487474705c4f7574707574735c42617365526573706f6e736523736574537563636573735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/1f/5b5b435d4170705c487474705c4f7574707574735c42617365526573706f6e736524737563636573735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/25/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f706572747923736574526174696e675d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/2a/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c6162696c697479526573706f6e73652373657450726f706572746965735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/2f/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274795d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/31/5b4170705c487474705c4f7574707574735c42617365526573706f6e7365246572726f72735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/31/5b5b435d4170705c487474705c4f7574707574735c42617365526573706f6e7365236765744572726f72735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/35/5b5b435d4170705c487474705c4f7574707574735c42617365526573706f6e736523746573745d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/36/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792470726963655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/37/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792373657443757272656e63795d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/38/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f706572747924616d656e69746965735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/3b/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f7065727479237365744c617469747564655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/3c/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792367657443757272656e63795d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/46/5b4170705c487474705c4f7574707574735c42617365526573706f6e7365236973537563636573735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/47/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f7065727479246c6f6e6769747564655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/47/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c6162696c697479526573706f6e73652367657450726f706572746965735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/47/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f706572747923736574416464726573735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/47/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792373657450726963655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/51/5b5b435d4170705c487474705c4f7574707574735c42617365526573706f6e7365236973537563636573735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/54/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792470726963655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/56/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792367657450726f7065727479436f64655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/59/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274795d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/59/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f7065727479237365744e616d655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/5a/5b4170705c487474705c4f7574707574735c4261736553657269616c697a61626c655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/5e/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f7065727479237365744c6f6e6769747564655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/5f/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792367657450726f7065727479436f64655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/63/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792367657450726f7669646572436f64655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/64/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792470726f76696465725f636f64655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/65/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f706572747923676574416d656e69746965735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/65/5b5b435d4170705c487474705c4f7574707574735c42617365526573706f6e7365246572726f72735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/68/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792470726f76696465725f636f64655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/6b/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f706572747923676574416464726573735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/6b/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f7065727479246c6f6e6769747564655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/6c/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f7065727479246c617469747564655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/6f/5b5b435d4170705c487474705c4f7574707574735c42617365526573706f6e7365236a736f6e53657269616c697a655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/70/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792373657450686f746f5d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/78/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792367657450726f7669646572436f64655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/7d/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792373657450726f7065727479436f64655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/7e/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f7065727479246e616d655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/82/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f7065727479237365744e616d655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/82/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f7065727479236765744e616d655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/89/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792373657443757272656e63795d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/8e/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792470726f7065727479436f64655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/90/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c6162696c697479526573706f6e73655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/90/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792373657450726f7669646572436f64655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/97/5b4170705c487474705c4f7574707574735c42617365526573706f6e7365236a736f6e53657269616c697a655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/97/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792367657450686f746f5d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/98/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792470726f7065727479436f64655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/9d/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f706572747924616464726573735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/a2/5b5b435d4170705c487474705c4f7574707574735c42617365526573706f6e73655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/a4/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792367657450726963655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/a7/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c6162696c697479526573706f6e73652373657450726f706572746965735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/a9/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f7065727479236765744e616d655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/aa/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f706572747924726174696e675d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/ae/5b5b435d4170705c487474705c4f7574707574735c4261736553657269616c697a61626c655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/b0/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792373657450686f746f5d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/b1/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f7065727479236765744c617469747564655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/b3/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f706572747923736574416464726573735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/b4/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c6162696c697479526573706f6e73655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/ba/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f706572747923676574416464726573735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/ba/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792470686f746f5d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/bd/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f706572747923676574416d656e69746965735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/c0/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f706572747923676574526174696e675d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/c1/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f7065727479246c617469747564655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/ce/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c6162696c697479526573706f6e73652470726f706572746965735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/ce/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f7065727479237365744c6f6e6769747564655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/cf/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792373657450726963655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/d4/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c6162696c697479526573706f6e73652367657450726f706572746965735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/d5/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f7065727479237365744c617469747564655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/d8/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f706572747923736574416d656e69746965735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/dd/5b4170705c487474705c4f7574707574735c42617365526573706f6e7365236765744572726f72735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/de/5b4170705c487474705c4f7574707574735c42617365526573706f6e736523746573745d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/de/5b5b435d4170705c487474705c4f7574707574735c42617365526573706f6e7365237365744572726f72735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/e0/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f706572747923676574526174696e675d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/e3/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792373657450726f7669646572436f64655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/e3/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c6162696c697479526573706f6e73652470726f706572746965735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/e4/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792470686f746f5d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/e7/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792367657450726963655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/ea/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f706572747924616d656e69746965735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/eb/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f706572747924726174696e675d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/ec/5b4170705c487474705c4f7574707574735c42617365526573706f6e73655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/ec/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f706572747923736574526174696e675d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/ef/5b4170705c487474705c4f7574707574735c4261736553657269616c697a61626c65236a736f6e53657269616c697a655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/ef/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792463757272656e63795d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/f3/5b5b435d4170705c487474705c4f7574707574735c4261736553657269616c697a61626c65236a736f6e53657269616c697a655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/f5/5b4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f7065727479246e616d655d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/f6/5b4170705c487474705c4f7574707574735c42617365526573706f6e736524737563636573735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/fb/5b4170705c487474705c4f7574707574735c42617365526573706f6e736523736574537563636573735d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/annotations/ff/5b5b435d4170705c487474705c4f7574707574735c436f6d6d6f6e5c486f74656c5c417661696c61626c6550726f70657274792463757272656e63795d5b315d.doctrinecache.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/metadata/App-Http-Outputs-BaseResponse.cache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/metadata/App-Http-Outputs-BaseSerializable.cache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/metadata/App-Http-Outputs-Common-Hotel-AvailabilityResponse.cache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/cache/serializer/metadata/App-Http-Outputs-Common-Hotel-AvailableProperty.cache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Sabre/SabrePropertyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Sabre/SabrePropertyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Contracts/IPropertyProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Contracts/IPropertyProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Proxy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/ResourceProxy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Traits/ProxyTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Traits/ResourceProxyTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Traits/SabrePropertyTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Traits/SabrePropertyTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Utils/SabreSoapClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/Activities/Hotel/SearchActivity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SabrePropertyProxy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SabrePropertyProxy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/SabrePropertyRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/SabrePropertyRepository.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -120,65 +25,60 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProxyTrait.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Traits/ProxyTrait.php">
+      <file leaf-file-name="SabrePropertyController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Sabre/SabrePropertyController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="615">
+              <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
               <folding>
-                <element signature="e#6#128#0#PHP" expanded="true" />
+                <element signature="e#47#102#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseResponse.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Outputs/BaseResponse.php">
+      <file leaf-file-name="SabrePropertyProxy.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SabrePropertyProxy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JmsSerializerServiceProvider.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Providers/JmsSerializerServiceProvider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="-206">
+              <caret line="67" column="29" lean-forward="true" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
               <folding>
-                <element signature="e#33#72#0#PHP" expanded="true" />
+                <element signature="e#180#235#0#PHP" expanded="true" />
+                <element signature="e#5888#5918#0#PHP" expanded="true" />
+                <element signature="e#6022#6052#0#PHP" expanded="true" />
+                <element signature="e#6154#6184#0#PHP" expanded="true" />
+                <element signature="e#6304#6334#0#PHP" expanded="true" />
+                <element signature="e#6454#6484#0#PHP" expanded="true" />
+                <element signature="e#6604#6634#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExpressionLanguageExclusionStrategy.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/jms/serializer/src/JMS/Serializer/Exclusion/ExpressionLanguageExclusionStrategy.php">
+      <file leaf-file-name="SearchActivity.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/Activities/Hotel/SearchActivity.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+            <state relative-caret-position="118">
+              <caret line="81" column="83" selection-start-line="81" selection-start-column="83" selection-end-line="81" selection-end-column="83" />
+              <folding>
+                <element signature="e#197#249#0#PHP" expanded="true" />
+                <element signature="e#853#883#0#PHP" expanded="true" />
+                <element signature="e#853#883#0#PHP" expanded="true" />
+                <element signature="e#922#952#0#PHP" expanded="true" />
+                <element signature="e#922#952#0#PHP" expanded="true" />
+                <element signature="e#2152#2301#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SabrePropertyTrait.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SabrePropertyTrait.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Traits/SabrePropertyTrait.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="71" column="55" selection-start-line="71" selection-start-column="55" selection-end-line="71" selection-end-column="55" />
+            <state relative-caret-position="651">
+              <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
               <folding>
-                <element signature="e#170#222#0#PHP" expanded="true" />
-                <element signature="e#554#627#0#PHP" />
+                <element signature="e#175#230#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -195,17 +95,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sizes</find>
-      <find>priority</find>
-      <find>prio</find>
-      <find>@yield</find>
-      <find>logou</find>
-      <find>post</find>
-      <find>page</find>
-      <find>sel</find>
-      <find>page-</find>
-      <find>col</find>
-      <find>select2</find>
       <find>page-titl</find>
       <find>collecti</find>
       <find>&lt;select</find>
@@ -225,6 +114,17 @@
       <find>SabrePropertyServiceProvider</find>
       <find>anodal@reloquest.com</find>
       <find>Ipro</find>
+      <find>setApplicationResults</find>
+      <find>Genea</find>
+      <find>OTA_HotelAvailLLS2.3.0RQRS</find>
+      <find>Gene</find>
+      <find>OTA_HotelAvailService</find>
+      <find>dd</find>
+      <find>$rateRange</find>
+      <find>getOtaAvailVersion</find>
+      <find>$params</find>
+      <find>search</find>
+      <find>IPropertyProvider</find>
     </findStrings>
     <replaceStrings>
       <replace>=&gt;</replace>
@@ -232,6 +132,7 @@
       <replace>pXxZXMKuMG</replace>
       <replace>security_level</replace>
       <replace>antonio.nodal88@gmail.com</replace>
+      <replace>$this-&gt;requqestParams</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -277,57 +178,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/StateProvince.php" />
-        <option value="$PROJECT_DIR$/app/Country.php" />
-        <option value="$PROJECT_DIR$/public/js/user/form.js" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/base.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/menus/superadmin.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/forms/user.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/form.blade.php" />
-        <option value="$PROJECT_DIR$/app/IntegrationHub/Vendor.php" />
-        <option value="$PROJECT_DIR$/config/logging.php" />
-        <option value="$PROJECT_DIR$/app/Providers/SabrePropertyProvider.php" />
-        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Container/Container.php" />
-        <option value="$PROJECT_DIR$/app/Providers/SabreServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/IntegrationHub/Contracts/PropertyProvider.php" />
-        <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/IPropertyProxy.php" />
-        <option value="$PROJECT_DIR$/app/IntegrationHub/Utils/XMLSerializer.php" />
-        <option value="$PROJECT_DIR$/config/sabrehotel.php" />
-        <option value="$PROJECT_DIR$/app/IntegrationHub/Proxy.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/app/IntegrationHub/Common/ApiResponse.php" />
-        <option value="$PROJECT_DIR$/app/IntegrationHub/Common/BaseResponse.php" />
-        <option value="$PROJECT_DIR$/app/IntegrationHub/Common/AvailabilityResponse.php" />
-        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/helpers.php" />
-        <option value="$PROJECT_DIR$/app/IntegrationHub/Contracts/IPropertyProvider.php" />
-        <option value="$PROJECT_DIR$/app/User.php" />
-        <option value="$PROJECT_DIR$/config/auth.php" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/PropertyProxy.php" />
-        <option value="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Providers/SabrePropertyServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/FormRequest.php" />
-        <option value="$PROJECT_DIR$/app/Http/ApiOutput/BaseSerializable.php" />
-        <option value="$PROJECT_DIR$/app/IntegrationHub/Common/Hotel/AvailableProperty.php" />
-        <option value="$PROJECT_DIR$/app/Http/ApiOutput/Common/Hotel/AvailableProperty.php" />
-        <option value="$PROJECT_DIR$/app/Http/ApiOutput/Common/AvailabilityResponse.php" />
-        <option value="$PROJECT_DIR$/app/Http/ApiOutput/Common/Hotel/AvailabilityResponse.php" />
         <option value="$PROJECT_DIR$/app/Http/ApiOutput/BaseResponse.php" />
         <option value="$PROJECT_DIR$/app/Http/Outputs/Common/Hotel/AvailabilityResponse.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/JmsSerializer.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Sabre/SabrePropertyController.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/SearchAvailability.php" />
         <option value="$PROJECT_DIR$/app/Http/Outputs/Common/Hotel/AvailableProperty.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/SearchAvailabilityFormRequest.php" />
-        <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SabrePropertyProxy.php" />
-        <option value="$PROJECT_DIR$/app/IntegrationHub/Traits/SabrePropertyTrait.php" />
-        <option value="$PROJECT_DIR$/app/IntegrationHub/Traits/ProxyTrait.php" />
         <option value="$PROJECT_DIR$/app/Providers/JmsSerializerServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Http/Outputs/BaseResponse.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/FormRequest.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_12_02_035444_create_currencies_table.php" />
+        <option value="$PROJECT_DIR$/app/Rules/Occupancy.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/SearchAvailabilityFormRequest.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/config/database.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/OTA_HotelAvailService.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/OTA_HotelAvail/OTA_HotelAvailLLSRQ.wsdl" />
+        <option value="$PROJECT_DIR$/storage/logs/laravel.log" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/OTA_HotelAvail/OTA_HotelAvailLLS2.3.0RQRS.xsd" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/OTA_HotelAvail/OTA_HotelAvailLLS2.3.0RQ.xsd" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/OTA_HotelAvail/OTA_HotelAvailLLS2.3.0RS.xsd" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SabreSoapClient.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailService.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Utils/LtsCustomSoapClient.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Traits/ClassMapAccessorTrait.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Utils/ClassMapAccessor.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Utils/SoapClientWrapper.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Traits/MappeableTrait.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Traits/MappableTrait.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Utils/Imappeable.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Utils/Imappable.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Utils/IMappable.php" />
+        <option value="$PROJECT_DIR$/app/Repository/SabrePropertyRepository.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Utils/SabreSoapClient.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Utils/OTA_HotelAvailRQ.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/Activities/Hotel/OTA_HotelAvailRQ.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Contracts/IPropertyProvider.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Contracts/IResourceProxy.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Traits/ProxyTrait.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Traits/ResourceProxyTrait.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Contracts/IActivity.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Proxy.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/ResourceProxy.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SabrePropertyResourceProxy.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/Activities/BaseActivity.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SabrePropertyProxy.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Sabre/SabrePropertyController.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/Activities/Hotel/SearchActivity.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Traits/SabrePropertyTrait.php" />
       </list>
     </option>
   </component>
@@ -470,6 +371,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -486,34 +388,85 @@
               <item name="lts" type="b2602c69:ProjectViewProjectNode" />
               <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Providers" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="lts" type="b2602c69:ProjectViewProjectNode" />
               <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootstrap" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Outputs" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="lts" type="b2602c69:ProjectViewProjectNode" />
               <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="storage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Outputs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Common" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="lts" type="b2602c69:ProjectViewProjectNode" />
               <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="storage" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cache" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Outputs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Common" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Hotel" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="IntegrationHub" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="IntegrationHub" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Contracts" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="IntegrationHub" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Traits" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="IntegrationHub" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Vendors" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="IntegrationHub" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Vendors" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Sabre" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="IntegrationHub" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Vendors" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Sabre" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Activities" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///var/www/html/lts/app/IntegrationHub/Common/Hotel/AvailableProperty.php&#10;Golf&#9;null&#9;null&#10;Container.php&#9;FILE&#9;file:///var/www/html/lts/vendor/laravel/framework/src/Illuminate/Container/Container.php&#10;routes/web.php&#9;FILE&#9;file:///var/www/html/lts/routes/web.php&#10;routes/api&#9;FILE&#9;file:///var/www/html/lts/routes/api.php&#10;User&#9;FILE&#9;file:///var/www/html/lts/app/User.php&#10;UserSeede&#9;FILE&#9;file:///var/www/html/lts/database/seeds/UserSeeder.php&#10;Role&#9;FILE&#9;file:///var/www/html/lts/app/Role.php&#10;Conte&#9;FILE&#9;file:///var/www/html/lts/packages/ladonlabs/sabrehotel/src/Context.php&#10;HomeCOntroller&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="SabreProper&#9;FILE&#9;file:///var/www/html/lts/app/IntegrationHub/Vendors/Sabre/SabrePropertyProxy.php&#10;OTA_HotelAvailLLS2.3.0RQ.xsd&#9;FILE&#9;file:///var/www/html/lts/app/IntegrationHub/Vendors/Sabre/wsdls/OTA_HotelAvail/OTA_HotelAvailLLS2.3.0RQ.xsd&#10;UserController&#9;FILE&#9;file:///var/www/html/lts/app/Http/Controllers/UserController.php&#10;Sabre&#9;FILE&#9;file:///var/www/html/lts/app/Http/Controllers/Sabre/SabrePropertyController.php&#10;Golf&#9;null&#9;null&#10;Container.php&#9;FILE&#9;file:///var/www/html/lts/vendor/laravel/framework/src/Illuminate/Container/Container.php&#10;routes/web.php&#9;FILE&#9;file:///var/www/html/lts/routes/web.php&#10;routes/api&#9;FILE&#9;file:///var/www/html/lts/routes/api.php&#10;User&#9;FILE&#9;file:///var/www/html/lts/app/User.php&#10;UserSeede&#9;FILE&#9;file:///var/www/html/lts/database/seeds/UserSeeder.php&#10;Role&#9;FILE&#9;file:///var/www/html/lts/app/Role.php&#10;Conte&#9;FILE&#9;file:///var/www/html/lts/packages/ladonlabs/sabrehotel/src/Context.php&#10;HomeCOntroller&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -522,18 +475,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/OTA_HotelAvail" />
       <recent name="$PROJECT_DIR$/app/IntegrationHub/Utils" />
       <recent name="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap" />
       <recent name="$PROJECT_DIR$/database/factories" />
       <recent name="$PROJECT_DIR$/packages/ladonlabs/hotelbeds/src/config" />
-      <recent name="$PROJECT_DIR$/packages/ladonlabs/hotelbeds/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/Activities/Hotel" />
+      <recent name="$PROJECT_DIR$/app/IntegrationHub/Utils" />
       <recent name="$PROJECT_DIR$/app/Http/ApiOutput/Common/Hotel" />
       <recent name="$PROJECT_DIR$/app/Http/ApiOutput" />
       <recent name="$PROJECT_DIR$/app/IntegrationHub/Common/Hotel" />
-      <recent name="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre" />
-      <recent name="$PROJECT_DIR$/resources/views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -628,11 +581,23 @@
       <workItem from="1543547780155" duration="4593000" />
       <workItem from="1543585783390" duration="15000" />
       <workItem from="1543631751638" duration="10166000" />
+      <workItem from="1543719533148" duration="7081000" />
+      <workItem from="1543848864290" duration="32000" />
+      <workItem from="1543892061996" duration="7241000" />
+      <workItem from="1543941283643" duration="76000" />
+      <workItem from="1543979030981" duration="7417000" />
+      <workItem from="1544017347462" duration="21000" />
+      <workItem from="1544017471459" duration="16000" />
+      <workItem from="1544066370924" duration="13298000" />
+      <workItem from="1544104831071" duration="9000" />
+      <workItem from="1544219507045" duration="2499000" />
+      <workItem from="1544222842800" duration="2506000" />
+      <workItem from="1544238673770" duration="8016000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="319716000" />
+    <option name="totallyTimeSpent" value="367928000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="-11" width="1875" height="1092" extended-state="6" />
@@ -641,11 +606,11 @@
       <window_info anchor="bottom" id="TODO" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32890856" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.32890856" />
+      <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32991803" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25467166" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2626802" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32889345" />
@@ -680,299 +645,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Address.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Property.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/BasicPropertyInfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="319" column="19" selection-start-line="319" selection-start-column="19" selection-end-line="319" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/soap/soap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1665">
-          <caret line="847" column="9" selection-start-line="847" selection-start-column="9" selection-end-line="847" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Contracts/IPropertyProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Golf.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Breakfast.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/PropertyOptionInfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="387" column="37" selection-start-line="387" selection-start-column="20" selection-end-line="387" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/passport/src/HasApiTokens.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/sabrehotel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
-          <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Proxy.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/logging.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="51" column="46" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Support/Jsonable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Outputs/Common/Hotel/AvailabilityResponse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/http-foundation/JsonResponse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/JsonResponse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/JmsSerializer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="75" selection-start-line="26" selection-start-column="75" selection-end-line="26" selection-end-column="75" />
-          <folding>
-            <element signature="e#39#51#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Config/Repository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1204">
-          <caret line="192" column="59" lean-forward="true" selection-start-line="192" selection-start-column="59" selection-end-line="192" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/SabrePropertyServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/jms/serializer/src/JMS/Serializer/Serializer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1332">
-          <caret line="85" column="20" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Sabre/SabrePropertyController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
-          <folding>
-            <element signature="e#47#102#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/FormRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Outputs/Common/Hotel/AvailableProperty.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Outputs/BaseSerializable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Outputs/BaseSerializableTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/SearchAvailabilityFormRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SabrePropertyProxy.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
-          <folding>
-            <element signature="e#176#227#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Traits/asdasd.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#6#129#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Traits/dsdf.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#6#134#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Traits/SabrePropertyTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="71" column="55" selection-start-line="71" selection-start-column="55" selection-end-line="71" selection-end-column="55" />
-          <folding>
-            <element signature="e#170#222#0#PHP" expanded="true" />
-            <element signature="e#554#627#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Traits/ProxyTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#6#128#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Traits/dsdf.php" />
     <entry file="file://$PROJECT_DIR$/vendor/jms/serializer/src/JMS/Serializer/Expression/ExpressionEvaluatorInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -987,19 +660,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/jms/serializer/doc/cookbook.rst">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/jms/serializer/doc/index.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-134" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/jms/serializer/doc/reference.rst">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/jms/serializer/doc/usage.rst">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/jms/serializer/doc/configuration.rst">
       <provider selected="true" editor-type-id="text-editor">
@@ -1008,11 +672,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/JmsSerializerServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
+        <state relative-caret-position="612">
           <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#33#72#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1023,6 +684,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/jms/serializer/src/JMS/Serializer/Exclusion/ExpressionLanguageExclusionStrategy.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -1030,17 +698,245 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Outputs/BaseResponse.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/FormRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        <state relative-caret-position="777">
+          <caret line="52" column="101" selection-start-line="52" selection-start-column="101" selection-end-line="52" selection-end-column="101" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_02_035444_create_currencies_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        <state relative-caret-position="540">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Rules/Occupancy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="58" column="176" selection-start-line="58" selection-start-column="176" selection-end-line="58" selection-end-column="176" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repository/BaseRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repository/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="2663" column="20" selection-start-line="2663" selection-start-column="20" selection-end-line="2663" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/SearchAvailabilityFormRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="41" column="18" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/HotelRef.php" />
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Criterion.php" />
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/OTA_HotelAvailRS.php" />
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/OTA_HotelAvailService.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="241" selection-start-line="241" selection-end-line="241" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
+          <folding>
+            <element signature="e#40#53#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/OTA_HotelAvail/OTA_HotelAvailLLS2.3.0RS.xsd" />
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/OTA_HotelAvail/OTA_HotelAvailLLS2.3.0RQ.xsd" />
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/OTA_HotelAvail/OTA_HotelAvailLLS2.3.0RQ.wsdl" />
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/OTA_HotelAvail/OTA_HotelAvailLLS2.3.0RQRS.xsd" />
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/autoload.php" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_5.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="433" column="9" selection-start-line="433" selection-start-column="9" selection-end-line="433" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Traits/ClassMapAccessorTrait.php" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/soap/soap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Traits/MappableTrait.php" />
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Utils/IMappable.php" />
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailService.php" />
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Utils/SoapClientWrapper.php" />
+    <entry file="file://$PROJECT_DIR$/app/Repository/SabrePropertyRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/CacheManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4245">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Outputs/Common/Hotel/AvailabilityResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="36" column="33" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Outputs/BaseResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Contracts/IPropertyProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Traits/ResourceProxyTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Contracts/IActivity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/ResourceProxy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+          <folding>
+            <element signature="e#167#215#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Contracts/IResourceProxy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="22" column="93" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/Activities/BaseActivity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="33" column="15" lean-forward="true" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+          <folding>
+            <element signature="e#192#235#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Sabre/SabrePropertyController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+          <folding>
+            <element signature="e#47#102#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SabrePropertyProxy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-206">
+          <caret line="67" column="29" lean-forward="true" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
+          <folding>
+            <element signature="e#180#235#0#PHP" expanded="true" />
+            <element signature="e#5888#5918#0#PHP" expanded="true" />
+            <element signature="e#6022#6052#0#PHP" expanded="true" />
+            <element signature="e#6154#6184#0#PHP" expanded="true" />
+            <element signature="e#6304#6334#0#PHP" expanded="true" />
+            <element signature="e#6454#6484#0#PHP" expanded="true" />
+            <element signature="e#6604#6634#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/Activities/Hotel/SearchActivity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="81" column="83" selection-start-line="81" selection-start-column="83" selection-end-line="81" selection-end-column="83" />
+          <folding>
+            <element signature="e#197#249#0#PHP" expanded="true" />
+            <element signature="e#853#883#0#PHP" expanded="true" />
+            <element signature="e#853#883#0#PHP" expanded="true" />
+            <element signature="e#922#952#0#PHP" expanded="true" />
+            <element signature="e#922#952#0#PHP" expanded="true" />
+            <element signature="e#2152#2301#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Traits/SabrePropertyTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+          <folding>
+            <element signature="e#175#230#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
