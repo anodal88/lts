@@ -10,12 +10,10 @@
 namespace App\IntegrationHub\Traits;
 
 
+use App\Http\Outputs\Common\Hotel\AvailabilityResponse;
 use App\Http\Outputs\Common\Hotel\AvailableProperty;
 use App\IntegrationHub\Contracts\IPropertyProvider;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\AvailabilityOption;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\BasicPropertyInfo;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\OTA_HotelAvailRS;
-use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\PropertyOptionInfo;
+
 
 /**
  * Trait SabrePropertyTrait
@@ -23,62 +21,15 @@ use App\IntegrationHub\Vendors\Sabre\SoapMap\OTA_HotelAvailRQ\PropertyOptionInfo
  */
 trait SabrePropertyTrait
 {
-
     /**
-     * Return The Sabre Availability on the response converted to the common format
-     * @param OTA_HotelAvailRS $response
-     * @return array
+     * @param mixed $response
+     * @return bool
      */
-    public function availabilityPropertyListFromSabre($response,array $imgByCodes=[])
+    public function isResponseSuccess($response):bool
     {
-        $properties = [];
-
-        $success = data_get($response,'ApplicationResults.Success',false) ?true:false;
-        $availableOptions = data_get($response,'AvailabilityOptions.AvailabilityOption',[]);
-
-        if ($success) {
-            foreach ($availableOptions as $option) {
-                $basicInfo = data_get($option,'BasicPropertyInfo',null);
-                $rateRange =$basicInfo->RateRange??null;
-                if (!$rateRange) {
-                    continue;
-                }
-                $addressLines =  $basicInfo->Address->AddressLine ?? [];
-                $address = implode(', ',$addressLines);
-
-                /** @var array $propertyArray */
-                $propertyArray = $basicInfo->Property ?? null;
-                $starsText = $propertyArray[0] ? $propertyArray[0]->Text : null;
-                $stars = $starsText ? substr($starsText, 0, 1) : -1;
-                $item = new AvailableProperty();
-                $amenities = [];
-
-                $amenitiesNode = $basicInfo->PropertyOptionInfo;
-                if ($amenitiesNode) {
-                    foreach ($this->getSabreAmenityDefinitions() as $amenityName) {
-                        $exist = ($amenitiesNode->$amenityName)->Ind;
-                        if ($exist) {
-                            $amenities[] = $amenityName;
-                        }
-                    }
-                }
-                $hotelCode = (int)$basicInfo->HotelCode;
-                $item->setName($basicInfo->HotelName)
-                    ->setPhoto($imgByCodes[$hotelCode])
-                    ->setAddress($address)
-                    ->setLatitude($basicInfo->Latitude)
-                    ->setLongitude($basicInfo->Longitude)
-                    ->setPropertyCode($hotelCode)
-                    ->setRating($stars)
-                    ->setCurrency($rateRange->CurrencyCode)
-                    ->setPrice($rateRange->Min)
-                    ->setProviderCode(IPropertyProvider::SABRE_PROPERTY_PROVIDER)
-                    ->setAmenities($amenities);
-                $properties[] = $item;
-            }
-        }
-        return $properties;
+        return data_get($response, 'ApplicationResults.Success', false) ? true : false;
     }
+
 
     /**
      * Return the list of amenities defined for SABRE properties
@@ -142,20 +93,11 @@ trait SabrePropertyTrait
         ];
     }
 
-    /**
-     * Due to SABRE don't allow to search multiple availabilities at the same time
-     * we ave the total amount of guest by each room
-     * @param $rooms
-     * @return float
-     */
-    public function getGuestsCount(array $rooms)
-    {
-        $guestCount = 0;
-        foreach ($rooms as $r) {
-            $guest = explode(',', $r);
-            $guestCount += $guest[0];
-        }
+    public function extractErrors($response){}
 
-        return round($guestCount / count($rooms), 0);
-    }
+    public function extractWarnings($response){}
+
+
+
+
 }

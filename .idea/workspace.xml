@@ -4,181 +4,12 @@
     <list default="true" id="290bf3c9-95bb-47e7-952b-31e750256bea" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Sabre/SabrePropertyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Sabre/SabrePropertyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Contracts/IPropertyProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Contracts/IPropertyProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Proxy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/ResourceProxy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Traits/ProxyTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Traits/ResourceProxyTrait.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Traits/SabrePropertyTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Traits/SabrePropertyTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Utils/SabreSoapClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/Activities/Hotel/SearchActivity.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SabrePropertyProxy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SabrePropertyProxy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/ADA_Accessible.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/AckRequested.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Acknowledgment.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/AdditionalAvail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/AdditionalInfo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Address.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/AdultsOnly.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Alt_Avail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/ApplicationResults.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/AvailRequestSegment.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/AvailabilityOption.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/AvailabilityOptions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Award.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/BasicPropertyInfo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/BeachFront.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Body.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/BookingChannel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Breakfast.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/BusinessCenter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/BusinessReady.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/CancelPolicy.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/CanonicalizationMethodType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/CityList.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/CompanyName.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/CompletionCodes.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/ContactNumber.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/ContactNumbers.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Conventions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Corporate.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Criterion.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Customer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/DC_AvailParticipant.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/DC_SellParticipant.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/DSAKeyValueType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Dataport.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Description.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/DiagnosticLevels.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/DiagnosticResults.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Diagnostics.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/DigestMethodType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Dining.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/DirectConnect.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/DryClean.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/EcoCertified.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Envelope.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Error.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/ErrorList.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/ErrorType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/ExecutiveFloors.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Fault.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/FitnessCenter.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/FreeLocalCalls.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/FreeParking.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/FreeShuttle.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/FreeWifiInMeetingRooms.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/FreeWifiInPublicSpaces.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/FreeWifiInRooms.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/From.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/FullServiceSpa.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/GameFacilities.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Golf.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/GuestCounts.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/HighSpeedInternet.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/HostCommand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/HotelFeature.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/HotelRef.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/HotelSearchCriteria.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/HypoallergenicRooms.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/ID.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Identification.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/IdentifierSystem.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/InRoomCoffeeTea.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/InRoomMiniBar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/InRoomRefrigerator.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/InRoomSafe.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/IndoorPool.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/InteriorDoorways.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Jacuzzi.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/KeyInfoType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/KeyValueType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/KidsFacilities.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/KitchenFacilities.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Line.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/LocationDescription.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Manifest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/ManifestType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/MealService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/MeetingFacilities.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/MessageCondition.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/MessageData.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/MessageHeader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/MessageOrder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/NoAdultTV.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/NonSmoking.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/OTA_HotelAvailRQ.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/OTA_HotelAvailRS.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/OTA_HotelAvailService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/ObjectType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/OutdoorPool.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/PGPDataType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/POS.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/PartyId.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Pets.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/PointOfInterest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Pool.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/ProblemBase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/ProblemInformation.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/ProblemSummary.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Property.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/PropertyOptionInfo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/PublicTransportationAdjacent.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/RSAKeyValueType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/RateAccessCode.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/RateAssured.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/RatePlanCandidates.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/RateRange.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/RatesExceedMax.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Recreation.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/RefPoint.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Reference.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/ReferenceType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/RestrictedRoomAccess.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/ResultSummary.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Results.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/RetrievalMethodType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/RoomRate.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/RoomService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/RoomService24Hours.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/RoomsWithBalcony.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/SPKIDataType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/STL_Payload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/SabreHeader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Schema.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Security.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Service.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/SignatureMethodType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/SignaturePropertiesType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/SignaturePropertyType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/SignatureType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/SignatureValueType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/SignedInfoType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/SkiInOutProperty.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/SmokeFree.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/SmokingRoomsAvail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Source.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/SpecialOffers.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/StatusRequest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/StatusResponse.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/SyncReply.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/SystemSpecificResults.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Tennis.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/TimeSpan.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/To.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/TraceRecord.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/TraceRole.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Traces.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/TrackingID.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/TransformType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/TransformsType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/UnAvail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/UsernameToken.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/WaterPurificationSystem.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/Wheelchair.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/X509DataType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/X509IssuerSerialType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/autoload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/detail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/messageStatustype.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/sequenceNumbertype.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/severitytype.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/statustype.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Repository/SabrePropertyRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/SabrePropertyRepository.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -197,8 +28,8 @@
       <file leaf-file-name="SabrePropertyController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Sabre/SabrePropertyController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
+            <state relative-caret-position="615">
+              <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
               <folding>
                 <element signature="e#47#102#0#PHP" expanded="true" />
               </folding>
@@ -206,57 +37,49 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SabrePropertyRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Repository/SabrePropertyRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
-              <caret line="69" column="68" selection-start-line="69" selection-start-column="68" selection-end-line="69" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SabrePropertyProxy.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SabrePropertyProxy.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SabrePropertyProxy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="-206">
+              <caret line="67" column="29" lean-forward="true" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
               <folding>
-                <element signature="e#5435#5465#0#PHP" expanded="true" />
-                <element signature="e#5567#5597#0#PHP" expanded="true" />
-                <element signature="e#5717#5747#0#PHP" expanded="true" />
-                <element signature="e#5867#5897#0#PHP" expanded="true" />
-                <element signature="e#6017#6047#0#PHP" expanded="true" />
+                <element signature="e#180#235#0#PHP" expanded="true" />
+                <element signature="e#5888#5918#0#PHP" expanded="true" />
+                <element signature="e#6022#6052#0#PHP" expanded="true" />
+                <element signature="e#6154#6184#0#PHP" expanded="true" />
+                <element signature="e#6304#6334#0#PHP" expanded="true" />
+                <element signature="e#6454#6484#0#PHP" expanded="true" />
+                <element signature="e#6604#6634#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SabreSoapClient.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Utils/SabreSoapClient.php">
+      <file leaf-file-name="SearchActivity.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/Activities/Hotel/SearchActivity.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="666">
-              <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
+            <state relative-caret-position="118">
+              <caret line="81" column="83" selection-start-line="81" selection-start-column="83" selection-end-line="81" selection-end-column="83" />
               <folding>
-                <element signature="e#40#53#0#PHP" expanded="true" />
+                <element signature="e#197#249#0#PHP" expanded="true" />
+                <element signature="e#853#883#0#PHP" expanded="true" />
+                <element signature="e#853#883#0#PHP" expanded="true" />
+                <element signature="e#922#952#0#PHP" expanded="true" />
+                <element signature="e#922#952#0#PHP" expanded="true" />
+                <element signature="e#2152#2301#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SabrePropertyTrait.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SabrePropertyTrait.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Traits/SabrePropertyTrait.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="63" column="17" lean-forward="true" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+            <state relative-caret-position="651">
+              <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+              <folding>
+                <element signature="e#175#230#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -272,9 +95,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>page-</find>
-      <find>col</find>
-      <find>select2</find>
       <find>page-titl</find>
       <find>collecti</find>
       <find>&lt;select</find>
@@ -300,8 +120,11 @@
       <find>Gene</find>
       <find>OTA_HotelAvailService</find>
       <find>dd</find>
-      <find>search</find>
       <find>$rateRange</find>
+      <find>getOtaAvailVersion</find>
+      <find>$params</find>
+      <find>search</find>
+      <find>IPropertyProvider</find>
     </findStrings>
     <replaceStrings>
       <replace>=&gt;</replace>
@@ -309,6 +132,7 @@
       <replace>pXxZXMKuMG</replace>
       <replace>security_level</replace>
       <replace>antonio.nodal88@gmail.com</replace>
+      <replace>$this-&gt;requqestParams</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -354,17 +178,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/IntegrationHub/Contracts/IPropertyProvider.php" />
-        <option value="$PROJECT_DIR$/app/User.php" />
-        <option value="$PROJECT_DIR$/config/auth.php" />
-        <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/PropertyProxy.php" />
-        <option value="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Providers/SabrePropertyServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Http/ApiOutput/BaseSerializable.php" />
-        <option value="$PROJECT_DIR$/app/IntegrationHub/Common/Hotel/AvailableProperty.php" />
-        <option value="$PROJECT_DIR$/app/Http/ApiOutput/Common/Hotel/AvailableProperty.php" />
-        <option value="$PROJECT_DIR$/app/Http/ApiOutput/Common/AvailabilityResponse.php" />
-        <option value="$PROJECT_DIR$/app/Http/ApiOutput/Common/Hotel/AvailabilityResponse.php" />
         <option value="$PROJECT_DIR$/app/Http/ApiOutput/BaseResponse.php" />
         <option value="$PROJECT_DIR$/app/Http/Outputs/Common/Hotel/AvailabilityResponse.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/JmsSerializer.php" />
@@ -372,7 +185,6 @@
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/SearchAvailability.php" />
         <option value="$PROJECT_DIR$/app/Http/Outputs/Common/Hotel/AvailableProperty.php" />
-        <option value="$PROJECT_DIR$/app/IntegrationHub/Traits/ProxyTrait.php" />
         <option value="$PROJECT_DIR$/app/Providers/JmsSerializerServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Http/Outputs/BaseResponse.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -382,7 +194,6 @@
         <option value="$PROJECT_DIR$/app/Http/Requests/SearchAvailabilityFormRequest.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/config/database.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Sabre/SabrePropertyController.php" />
         <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailRQ/OTA_HotelAvailService.php" />
         <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/OTA_HotelAvail/OTA_HotelAvailLLSRQ.wsdl" />
         <option value="$PROJECT_DIR$/storage/logs/laravel.log" />
@@ -401,10 +212,23 @@
         <option value="$PROJECT_DIR$/app/IntegrationHub/Utils/Imappeable.php" />
         <option value="$PROJECT_DIR$/app/IntegrationHub/Utils/Imappable.php" />
         <option value="$PROJECT_DIR$/app/IntegrationHub/Utils/IMappable.php" />
-        <option value="$PROJECT_DIR$/app/IntegrationHub/Utils/SabreSoapClient.php" />
         <option value="$PROJECT_DIR$/app/Repository/SabrePropertyRepository.php" />
-        <option value="$PROJECT_DIR$/app/IntegrationHub/Traits/SabrePropertyTrait.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Utils/SabreSoapClient.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Utils/OTA_HotelAvailRQ.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/Activities/Hotel/OTA_HotelAvailRQ.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Contracts/IPropertyProvider.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Contracts/IResourceProxy.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Traits/ProxyTrait.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Traits/ResourceProxyTrait.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Contracts/IActivity.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Proxy.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/ResourceProxy.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SabrePropertyResourceProxy.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/Activities/BaseActivity.php" />
         <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SabrePropertyProxy.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Sabre/SabrePropertyController.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/Activities/Hotel/SearchActivity.php" />
+        <option value="$PROJECT_DIR$/app/IntegrationHub/Traits/SabrePropertyTrait.php" />
       </list>
     </option>
   </component>
@@ -571,13 +395,37 @@
               <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Requests" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Outputs" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Outputs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Common" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Outputs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Common" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Hotel" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="lts" type="b2602c69:ProjectViewProjectNode" />
               <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="IntegrationHub" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="IntegrationHub" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Contracts" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="lts" type="b2602c69:ProjectViewProjectNode" />
@@ -585,13 +433,6 @@
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="IntegrationHub" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Traits" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="lts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="IntegrationHub" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Utils" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="lts" type="b2602c69:ProjectViewProjectNode" />
@@ -608,6 +449,15 @@
               <item name="Vendors" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Sabre" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="lts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="IntegrationHub" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Vendors" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Sabre" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Activities" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -616,7 +466,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="OTA_HotelAvailLLS2.3.0RQ.xsd&#9;FILE&#9;file:///var/www/html/lts/app/IntegrationHub/Vendors/Sabre/wsdls/OTA_HotelAvail/OTA_HotelAvailLLS2.3.0RQ.xsd&#10;UserController&#9;FILE&#9;file:///var/www/html/lts/app/Http/Controllers/UserController.php&#10;Sabre&#9;FILE&#9;file:///var/www/html/lts/app/Http/Controllers/Sabre/SabrePropertyController.php&#10;Golf&#9;null&#9;null&#10;Container.php&#9;FILE&#9;file:///var/www/html/lts/vendor/laravel/framework/src/Illuminate/Container/Container.php&#10;routes/web.php&#9;FILE&#9;file:///var/www/html/lts/routes/web.php&#10;routes/api&#9;FILE&#9;file:///var/www/html/lts/routes/api.php&#10;User&#9;FILE&#9;file:///var/www/html/lts/app/User.php&#10;UserSeede&#9;FILE&#9;file:///var/www/html/lts/database/seeds/UserSeeder.php&#10;Role&#9;FILE&#9;file:///var/www/html/lts/app/Role.php&#10;Conte&#9;FILE&#9;file:///var/www/html/lts/packages/ladonlabs/sabrehotel/src/Context.php&#10;HomeCOntroller&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="SabreProper&#9;FILE&#9;file:///var/www/html/lts/app/IntegrationHub/Vendors/Sabre/SabrePropertyProxy.php&#10;OTA_HotelAvailLLS2.3.0RQ.xsd&#9;FILE&#9;file:///var/www/html/lts/app/IntegrationHub/Vendors/Sabre/wsdls/OTA_HotelAvail/OTA_HotelAvailLLS2.3.0RQ.xsd&#10;UserController&#9;FILE&#9;file:///var/www/html/lts/app/Http/Controllers/UserController.php&#10;Sabre&#9;FILE&#9;file:///var/www/html/lts/app/Http/Controllers/Sabre/SabrePropertyController.php&#10;Golf&#9;null&#9;null&#10;Container.php&#9;FILE&#9;file:///var/www/html/lts/vendor/laravel/framework/src/Illuminate/Container/Container.php&#10;routes/web.php&#9;FILE&#9;file:///var/www/html/lts/routes/web.php&#10;routes/api&#9;FILE&#9;file:///var/www/html/lts/routes/api.php&#10;User&#9;FILE&#9;file:///var/www/html/lts/app/User.php&#10;UserSeede&#9;FILE&#9;file:///var/www/html/lts/database/seeds/UserSeeder.php&#10;Role&#9;FILE&#9;file:///var/www/html/lts/app/Role.php&#10;Conte&#9;FILE&#9;file:///var/www/html/lts/packages/ladonlabs/sabrehotel/src/Context.php&#10;HomeCOntroller&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -624,19 +474,19 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/IntegrationHub/Utils" />
-      <recent name="$PROJECT_DIR$/app/Http/ApiOutput/Common/Hotel" />
-      <recent name="$PROJECT_DIR$/app/Http/ApiOutput" />
-      <recent name="$PROJECT_DIR$/app/IntegrationHub/Common/Hotel" />
-      <recent name="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/OTA_HotelAvail" />
       <recent name="$PROJECT_DIR$/app/IntegrationHub/Utils" />
       <recent name="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap" />
       <recent name="$PROJECT_DIR$/database/factories" />
       <recent name="$PROJECT_DIR$/packages/ladonlabs/hotelbeds/src/config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/Activities/Hotel" />
+      <recent name="$PROJECT_DIR$/app/IntegrationHub/Utils" />
+      <recent name="$PROJECT_DIR$/app/Http/ApiOutput/Common/Hotel" />
+      <recent name="$PROJECT_DIR$/app/Http/ApiOutput" />
+      <recent name="$PROJECT_DIR$/app/IntegrationHub/Common/Hotel" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -741,12 +591,13 @@
       <workItem from="1544066370924" duration="13298000" />
       <workItem from="1544104831071" duration="9000" />
       <workItem from="1544219507045" duration="2499000" />
-      <workItem from="1544222842800" duration="2080000" />
+      <workItem from="1544222842800" duration="2506000" />
+      <workItem from="1544238673770" duration="8016000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="359486000" />
+    <option name="totallyTimeSpent" value="367928000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="-11" width="1875" height="1092" extended-state="6" />
@@ -756,12 +607,13 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32890856" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.32890856" />
+      <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32991803" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2626802" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.32889345" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
@@ -773,7 +625,6 @@
       <window_info anchor="bottom" id="Command Line Tools Console" order="1" weight="0.32890856" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.32889345" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -794,49 +645,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Utils/SabreSoapClient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3240">
-          <caret line="180" column="70" selection-start-line="180" selection-start-column="32" selection-end-line="180" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Utils/SoapClientWrapper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
-          <folding>
-            <element signature="e#173#225#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Traits/MappableTrait.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-          <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Traits/SabrePropertyTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2610">
-          <caret line="156" column="5" selection-start-line="156" selection-start-column="5" selection-end-line="156" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Utils/IMappable.php" />
     <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Traits/dsdf.php" />
     <entry file="file://$PROJECT_DIR$/vendor/jms/serializer/src/JMS/Serializer/Expression/ExpressionEvaluatorInterface.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -880,20 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Outputs/BaseResponse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Traits/ProxyTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -987,7 +781,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
+        <state relative-caret-position="504">
           <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
           <folding>
             <element signature="e#40#53#0#PHP" expanded="true" />
@@ -995,34 +789,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/OTA_HotelAvail/OTA_HotelAvailLLS2.3.0RS.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="441" column="12" selection-start-line="441" selection-start-column="12" selection-end-line="441" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/OTA_HotelAvail/OTA_HotelAvailLLS2.3.0RQ.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3312">
-          <caret line="184" column="55" selection-start-line="184" selection-start-column="55" selection-end-line="184" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/OTA_HotelAvail/OTA_HotelAvailLLS2.3.0RQ.wsdl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="124" selection-start-line="4" selection-start-column="98" selection-end-line="4" selection-end-column="124" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/OTA_HotelAvail/OTA_HotelAvailLLS2.3.0RQRS.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/OTA_HotelAvail/OTA_HotelAvailLLS2.3.0RS.xsd" />
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/OTA_HotelAvail/OTA_HotelAvailLLS2.3.0RQ.xsd" />
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/OTA_HotelAvail/OTA_HotelAvailLLS2.3.0RQ.wsdl" />
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/wsdls/OTA_HotelAvail/OTA_HotelAvailLLS2.3.0RQRS.xsd" />
     <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/autoload.php" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_5.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1041,64 +811,131 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Traits/MappableTrait.php" />
     <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Utils/IMappable.php" />
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailService.php">
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SoapMap/OTA_HotelAvailService.php" />
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Utils/SoapClientWrapper.php" />
+    <entry file="file://$PROJECT_DIR$/app/Repository/SabrePropertyRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3402">
-          <caret line="189" column="17" selection-start-line="187" selection-start-column="5" selection-end-line="189" selection-end-column="17" />
+        <state relative-caret-position="432">
+          <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Utils/SabreSoapClient.php">
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/CacheManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+        <state relative-caret-position="-4245">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Outputs/Common/Hotel/AvailabilityResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="36" column="33" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Outputs/BaseResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Contracts/IPropertyProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Traits/ResourceProxyTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Contracts/IActivity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/ResourceProxy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+          <folding>
+            <element signature="e#167#215#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Contracts/IResourceProxy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="22" column="93" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/Activities/BaseActivity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="33" column="15" lean-forward="true" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+          <folding>
+            <element signature="e#192#235#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Sabre/SabrePropertyController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
+        <state relative-caret-position="615">
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
           <folding>
             <element signature="e#47#102#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Traits/SabrePropertyTrait.php">
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SabrePropertyProxy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="63" column="17" lean-forward="true" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Utils/SoapClientWrapper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
+        <state relative-caret-position="-206">
+          <caret line="67" column="29" lean-forward="true" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
           <folding>
-            <element signature="e#173#225#0#PHP" expanded="true" />
+            <element signature="e#180#235#0#PHP" expanded="true" />
+            <element signature="e#5888#5918#0#PHP" expanded="true" />
+            <element signature="e#6022#6052#0#PHP" expanded="true" />
+            <element signature="e#6154#6184#0#PHP" expanded="true" />
+            <element signature="e#6304#6334#0#PHP" expanded="true" />
+            <element signature="e#6454#6484#0#PHP" expanded="true" />
+            <element signature="e#6604#6634#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repository/SabrePropertyRepository.php">
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/Activities/Hotel/SearchActivity.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="69" column="68" selection-start-line="69" selection-start-column="68" selection-end-line="69" selection-end-column="68" />
+        <state relative-caret-position="118">
+          <caret line="81" column="83" selection-start-line="81" selection-start-column="83" selection-end-line="81" selection-end-column="83" />
+          <folding>
+            <element signature="e#197#249#0#PHP" expanded="true" />
+            <element signature="e#853#883#0#PHP" expanded="true" />
+            <element signature="e#853#883#0#PHP" expanded="true" />
+            <element signature="e#922#952#0#PHP" expanded="true" />
+            <element signature="e#922#952#0#PHP" expanded="true" />
+            <element signature="e#2152#2301#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Vendors/Sabre/SabrePropertyProxy.php">
+    <entry file="file://$PROJECT_DIR$/app/IntegrationHub/Traits/SabrePropertyTrait.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="651">
+          <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
           <folding>
-            <element signature="e#5435#5465#0#PHP" expanded="true" />
-            <element signature="e#5567#5597#0#PHP" expanded="true" />
-            <element signature="e#5717#5747#0#PHP" expanded="true" />
-            <element signature="e#5867#5897#0#PHP" expanded="true" />
-            <element signature="e#6017#6047#0#PHP" expanded="true" />
+            <element signature="e#175#230#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

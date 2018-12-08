@@ -11,7 +11,7 @@ namespace App\IntegrationHub\Traits;
 
 
 
-trait ProxyTrait
+trait ResourceProxyTrait
 {
     /**
      * @param array $config

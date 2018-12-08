@@ -22,7 +22,7 @@ class SabrePropertyRepository
      * @param float $radiusInMeters
      * @return static
      */
-    public function getHotelCodeList($latitude=25.6956945,$longitude=-80.4502201,$radiusInMeters=50000,$onlyImages=false){
+    public function getHotelCodeList($latitude=25.6956945,$longitude=-80.4502201,$radiusInMeters=500000,$onlyImages=false){
 
         //convert radius to KM (111.045 km per degree == 69 miles per degree)
         $radiusInKM = $radiusInMeters/1000;

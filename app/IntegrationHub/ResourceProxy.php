@@ -10,9 +10,10 @@
 namespace App\IntegrationHub;
 
 
+use App\IntegrationHub\Contracts\IResourceProxy;
 use Illuminate\Log\Logger;
 
-abstract class Proxy
+abstract class ResourceProxy implements IResourceProxy
 {
     const MODE_PROD=1;
     const MODE_DEV=0;
@@ -50,7 +51,7 @@ abstract class Proxy
 
     /**
      * @param mixed $mode
-     * @return Proxy
+     * @return ResourceProxy
      */
     public function setMode($mode)
     {
@@ -68,9 +69,9 @@ abstract class Proxy
 
     /**
      * @param array $config
-     * @return Proxy
+     * @return ResourceProxy
      */
-    public function setConfig(array $config): Proxy
+    public function setConfig(array $config): ResourceProxy
     {
         $this->config = $config;
         return $this;
@@ -86,9 +87,9 @@ abstract class Proxy
 
     /**
      * @param bool $debug
-     * @return Proxy
+     * @return ResourceProxy
      */
-    public function setDebug(bool $debug): Proxy
+    public function setDebug(bool $debug): ResourceProxy
     {
         $this->debug = $debug;
         return $this;
@@ -104,9 +105,9 @@ abstract class Proxy
 
     /**
      * @param Logger $logger
-     * @return Proxy
+     * @return ResourceProxy
      */
-    public function setLogger(Logger $logger): Proxy
+    public function setLogger(Logger $logger): ResourceProxy
     {
         $this->logger = $logger;
         return $this;

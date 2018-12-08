@@ -24,19 +24,23 @@ class SabrePropertyController extends Controller
     /** @var SabrePropertyRepository */
     private $repository;
 
-    public function __construct(SabrePropertyProxy $proxy,Serializer $serializer,SabrePropertyRepository $repo)
+    public function __construct(SabrePropertyProxy $proxy, Serializer $serializer, SabrePropertyRepository $repo)
     {
         $this->propertyProxy = $proxy;
         $this->serializer = $serializer;
         $this->repository=$repo;
     }
 
+    /**
+     * @param SearchAvailabilityFormRequest $request
+     * @return static
+     */
     public function search(SearchAvailabilityFormRequest $request){
         $data = $request->validated();
         $data['property_codes'] = $this->repository->getHotelCodeList();
-        $properties = $this->propertyProxy->search($data);
-        $dataResponse = (new AvailabilityResponse())->setSuccess(true)->setProperties($properties);
-        $data = $this->serializer->toArray($dataResponse);
+        /** @var AvailabilityResponse $response */
+        $response = $this->propertyProxy->search($data);
+        $data = $this->serializer->toArray($response);
         return JsonResponse::create($data,Response::HTTP_OK);
     }
 }
