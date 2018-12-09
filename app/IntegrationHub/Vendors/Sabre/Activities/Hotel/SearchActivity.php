@@ -116,12 +116,13 @@ class SearchActivity extends BaseActivity
                         }
                     }
                 }
+
                 $hotelCode = (int)$basicInfo->HotelCode;
                 $item->setName($basicInfo->HotelName)
                     ->setPhoto($imgByCodes[$hotelCode])
                     ->setAddress($address)
-                    ->setLatitude($basicInfo->Latitude)
-                    ->setLongitude($basicInfo->Longitude)
+                    ->setLatitude($basicInfo->Latitude??null)
+                    ->setLongitude($basicInfo->Longitude??null)
                     ->setPropertyCode($hotelCode)
                     ->setRating($stars)
                     ->setCurrency($rateRange->CurrencyCode)
