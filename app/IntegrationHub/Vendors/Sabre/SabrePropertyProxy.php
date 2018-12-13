@@ -18,11 +18,12 @@ use App\IntegrationHub\Vendors\Sabre\Activities\Hotel\OTA_HotelAvailRQ;
 use App\IntegrationHub\Utils\SoapClientWrapper;
 use App\IntegrationHub\Utils\XMLSerializer;
 use App\IntegrationHub\Vendors\Sabre\Activities\Hotel\SearchActivity;
-use Illuminate\Support\Facades\Cache;
-use Illuminate\Support\Facades\Log;
-use Monolog\Logger;
+use App\SabreConnectionPoolToken;
+use App\User;
+use Illuminate\Cache\Repository as Cache;
 use Wsdl2PhpGenerator\Config;
 use Wsdl2PhpGenerator\Generator;
+use Illuminate\Log\Logger;
 
 class SabrePropertyProxy extends ResourceProxy implements IPropertyProvider
 {
@@ -38,6 +39,8 @@ class SabrePropertyProxy extends ResourceProxy implements IPropertyProvider
     protected $password;
 
     protected $domain;
+    /** @var User */
+    protected $user;
 
     /** @var \Illuminate\Log\Logger */
     protected $logger;
@@ -55,17 +58,23 @@ class SabrePropertyProxy extends ResourceProxy implements IPropertyProvider
     const WSDL_CANCEL_RESERVATION = "http://webservices.sabre.com/wsdl/tpfc/OTA_CancelLLS2.0.2RQ.wsdl";
 
 
-    const  token = "Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/ACPCRTD!ICESMSLB\/CRT.LB!1541737629814!171198!262145";
+    const  token = "Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/ACPCRTD!ICESMSLB\/CRT.LB!1544332336152!5724271!262145";
+
 
     /**
-     * PropertyProxy constructor.
+     * SabrePropertyProxy constructor.
      * @param array $config
+     * @param User $user
+     * @param Logger $sabreLogger
+     * @param Cache $cacheManager
      */
-    public function __construct(array $config=[])
+    public function __construct(array $config=[],User $user,Logger $sabreLogger,Cache $cacheManager)
     {
+        $this->user = $user;
         $this->config = $config;
-        $this->logger = Log::channel('sabre');
-        $this->cacheManager =
+        $this->logger = $sabreLogger;
+        $this->cacheManager =$cacheManager;
+
         //TODO put a conditional here based on the environment
         $this->endpoint = $this->getConfigValue($config, 'soap.dev.endpoint', true, '');
         $this->username = $this->getConfigValue($config, 'soap.dev.username', true, '');
@@ -286,32 +295,47 @@ class SabrePropertyProxy extends ResourceProxy implements IPropertyProvider
      */
     public function createSession()
     {
-        $wsdl = __DIR__ . '/wsdls/SessionCreateRQ/SessionCreateRQ.wsdl';
-        $client = new \SoapClient($wsdl,
-            array(
-                "uri" => $this->endpoint,
-                "location" => $this->endpoint,
-                "encoding" => "utf-8",
-                "trace" => 1,
-                'cache_wsdl' => WSDL_CACHE_NONE
-            ));
-        $responseHeaders = NULL;
-        $body = array("SessionCreateRQ" => array(
-            "POS" => array(
-                "Source" => array(
-                    "PseudeCityCode" => $this->organization
+        try{
+            $wsdl = __DIR__ . '/wsdls/SessionCreateRQ/SessionCreateRQ.wsdl';
+            $client = new \SoapClient($wsdl,
+                array(
+                    "uri" => $this->endpoint,
+                    "location" => $this->endpoint,
+                    "encoding" => "utf-8",
+                    "trace" => 1,
+                    'cache_wsdl' => WSDL_CACHE_NONE
+                ));
+            $responseHeaders = NULL;
+            $body = array("SessionCreateRQ" => array(
+                "POS" => array(
+                    "Source" => array(
+                        "PseudeCityCode" => $this->organization
+                    )
                 )
-            )
-        ));
+            ));
 
-        $response = $client->__soapCall("SessionCreateRQ",
-            $body,
-            null,
-            array($this->createMessageHeader("SessionCreateRQ"),
-                $this->createSecurityAuthHeader()),
-            $responseHeaders);
+            $response = $client->__soapCall("SessionCreateRQ",
+                $body,
+                null,
+                array($this->createMessageHeader("SessionCreateRQ"),
+                    $this->createSecurityAuthHeader()),
+                $responseHeaders);
+            //return $responseHeaders["Security"]->BinarySecurityToken ?? null;
 
-        return $responseHeaders["Security"]->BinarySecurityToken ?? null;
+            $token = new SabreConnectionPoolToken();
+            $token->token = $responseHeaders["Security"]->BinarySecurityToken;
+            $token->in_use = true;
+            $token->company_id = $this->user->company->id;
+            $token->save();
+
+            return $token->token;
+        }catch(\Exception $e){
+            //TODO create a custom exception that identifies the process
+            throw new \LogicException("Sabre Error creating connection pool token");
+        }
+
+
+
     }
 
     /**
@@ -332,12 +356,19 @@ class SabrePropertyProxy extends ResourceProxy implements IPropertyProvider
      * @return array
      */
     private function formatException(\Exception $e){
-        return [
+
+        $error = [
             'code'=>$e->getCode(),
             'error'=>$e->getMessage(),
             'line'=>$e->getLine(),
             'file'=>$e->getFile()
         ];
+        if($e instanceof \SoapFault){
+            $error['code']= $e->faultcode;
+        }
+        return $error;
     }
+
+
 
 }
