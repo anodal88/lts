@@ -1,4 +1,16 @@
 <?php return array (
+  'barryvdh/laravel-snappy' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Barryvdh\\Snappy\\ServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'PDF' => 'Barryvdh\\Snappy\\Facades\\SnappyPdf',
+      'SnappyImage' => 'Barryvdh\\Snappy\\Facades\\SnappyImage',
+    ),
+  ),
   'fideloper/proxy' => 
   array (
     'providers' => 
@@ -17,6 +29,20 @@
       'SabreHotel' => 'ladonlabs\\sabrehotel\\SabreHotelFacade',
     ),
   ),
+  'laravel/passport' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Passport\\PassportServiceProvider',
+    ),
+  ),
+  'laravel/tinker' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Tinker\\TinkerServiceProvider',
+    ),
+  ),
   'laravelcollective/html' => 
   array (
     'providers' => 
@@ -27,25 +53,6 @@
     array (
       'Form' => 'Collective\\Html\\FormFacade',
       'Html' => 'Collective\\Html\\HtmlFacade',
-    ),
-  ),
-  'barryvdh/laravel-snappy' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Barryvdh\\Snappy\\ServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'PDF' => 'Barryvdh\\Snappy\\Facades\\SnappyPdf',
-      'SnappyImage' => 'Barryvdh\\Snappy\\Facades\\SnappyImage',
-    ),
-  ),
-  'laravel/tinker' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Laravel\\Tinker\\TinkerServiceProvider',
     ),
   ),
   'maatwebsite/excel' => 
@@ -59,22 +66,11 @@
       'Excel' => 'Maatwebsite\\Excel\\Facades\\Excel',
     ),
   ),
-  'yajra/laravel-datatables-oracle' => 
+  'nunomaduro/collision' => 
   array (
     'providers' => 
     array (
-      0 => 'Yajra\\DataTables\\DataTablesServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'DataTables' => 'Yajra\\DataTables\\Facades\\DataTables',
-    ),
-  ),
-  'yajra/laravel-datatables-html' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Yajra\\DataTables\\HtmlServiceProvider',
+      0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
     ),
   ),
   'yajra/laravel-datatables-buttons' => 
@@ -84,18 +80,22 @@
       0 => 'Yajra\\DataTables\\ButtonsServiceProvider',
     ),
   ),
-  'nunomaduro/collision' => 
+  'yajra/laravel-datatables-html' => 
   array (
     'providers' => 
     array (
-      0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
+      0 => 'Yajra\\DataTables\\HtmlServiceProvider',
     ),
   ),
-  'laravel/passport' => 
+  'yajra/laravel-datatables-oracle' => 
   array (
     'providers' => 
     array (
-      0 => 'Laravel\\Passport\\PassportServiceProvider',
+      0 => 'Yajra\\DataTables\\DataTablesServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'DataTables' => 'Yajra\\DataTables\\Facades\\DataTables',
     ),
   ),
 );

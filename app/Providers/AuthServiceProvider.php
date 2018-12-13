@@ -31,7 +31,7 @@ class AuthServiceProvider extends ServiceProvider
 
         //Passport
         Passport::routes();
-        Passport::tokensExpireIn(now()->addDays(env('PASSPORT_ACCESS_TOKEN_LIFE_TIME_IN_DAYS'))); //Token Life time of 15 days
-        Passport::refreshTokensExpireIn(now()->addDays(env('PASSPORT_REFRESH_TOKEN_LIFE_TIME_IN_DAYS'))); //Refresh token lifetime of 30 days
+        Passport::tokensExpireIn(now()->addDays(env('PASSPORT_ACCESS_TOKEN_LIFE_TIME_IN_DAYS',15))); //Token Life time of 15 days
+        Passport::refreshTokensExpireIn(now()->addDays(env('PASSPORT_REFRESH_TOKEN_LIFE_TIME_IN_DAYS',30))); //Refresh token lifetime of 30 days
     }
 }

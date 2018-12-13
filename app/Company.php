@@ -13,4 +13,12 @@ class Company extends Model
     {
         return $this->hasMany('App\User');
     }
+
+    /**
+     * Get the sabre security tokens for the company.
+     */
+    public function sabreConnectionPoolTokens()
+    {
+        return $this->hasMany('App\Models\Sabre\SabreConnectionPoolToken');
+    }
 }

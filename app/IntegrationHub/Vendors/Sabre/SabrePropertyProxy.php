@@ -18,6 +18,7 @@ use App\IntegrationHub\Vendors\Sabre\Activities\Hotel\OTA_HotelAvailRQ;
 use App\IntegrationHub\Utils\SoapClientWrapper;
 use App\IntegrationHub\Utils\XMLSerializer;
 use App\IntegrationHub\Vendors\Sabre\Activities\Hotel\SearchActivity;
+use App\SabreConnectionPoolToken;
 use App\User;
 use Illuminate\Cache\Repository as Cache;
 use Wsdl2PhpGenerator\Config;
@@ -294,33 +295,47 @@ class SabrePropertyProxy extends ResourceProxy implements IPropertyProvider
      */
     public function createSession()
     {
-        $wsdl = __DIR__ . '/wsdls/SessionCreateRQ/SessionCreateRQ.wsdl';
-        $client = new \SoapClient($wsdl,
-            array(
-                "uri" => $this->endpoint,
-                "location" => $this->endpoint,
-                "encoding" => "utf-8",
-                "trace" => 1,
-                'cache_wsdl' => WSDL_CACHE_NONE
-            ));
-        $responseHeaders = NULL;
-        $body = array("SessionCreateRQ" => array(
-            "POS" => array(
-                "Source" => array(
-                    "PseudeCityCode" => $this->organization
+        try{
+            $wsdl = __DIR__ . '/wsdls/SessionCreateRQ/SessionCreateRQ.wsdl';
+            $client = new \SoapClient($wsdl,
+                array(
+                    "uri" => $this->endpoint,
+                    "location" => $this->endpoint,
+                    "encoding" => "utf-8",
+                    "trace" => 1,
+                    'cache_wsdl' => WSDL_CACHE_NONE
+                ));
+            $responseHeaders = NULL;
+            $body = array("SessionCreateRQ" => array(
+                "POS" => array(
+                    "Source" => array(
+                        "PseudeCityCode" => $this->organization
+                    )
                 )
-            )
-        ));
+            ));
 
-        $response = $client->__soapCall("SessionCreateRQ",
-            $body,
-            null,
-            array($this->createMessageHeader("SessionCreateRQ"),
-                $this->createSecurityAuthHeader()),
-            $responseHeaders);
+            $response = $client->__soapCall("SessionCreateRQ",
+                $body,
+                null,
+                array($this->createMessageHeader("SessionCreateRQ"),
+                    $this->createSecurityAuthHeader()),
+                $responseHeaders);
+            //return $responseHeaders["Security"]->BinarySecurityToken ?? null;
+
+            $token = new SabreConnectionPoolToken();
+            $token->token = $responseHeaders["Security"]->BinarySecurityToken;
+            $token->in_use = true;
+            $token->company_id = $this->user->company->id;
+            $token->save();
+
+            return $token->token;
+        }catch(\Exception $e){
+            //TODO create a custom exception that identifies the process
+            throw new \LogicException("Sabre Error creating connection pool token");
+        }
 
 
-        return $responseHeaders["Security"]->BinarySecurityToken ?? null;
+
     }
 
     /**
@@ -353,5 +368,7 @@ class SabrePropertyProxy extends ResourceProxy implements IPropertyProvider
         }
         return $error;
     }
+
+
 
 }
