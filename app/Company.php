@@ -19,6 +19,14 @@ class Company extends Model
      */
     public function sabreConnectionPoolTokens()
     {
-        return $this->hasMany('App\Models\Sabre\SabreConnectionPoolToken');
+        return $this->hasMany('App\SabreConnectionPoolToken');
+    }
+
+    /**
+     * Get the Sabre Property Configuration that owns the user.
+     */
+    public function sabrePropertyConfiguration()
+    {
+        return $this->hasOne('App\SabrePropertyConfiguration','company_id');
     }
 }

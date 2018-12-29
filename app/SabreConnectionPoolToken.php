@@ -13,9 +13,14 @@ use Illuminate\Support\Facades\Crypt;
 
 class SabreConnectionPoolToken extends Model
 {
+
+    const CONNECTION_LIFE_TIME_IN_SECONDS=840; // 14 minutes
+
     protected $table="sabre_connection_pool_tokens";
 
     protected $fillable=['token','in_use','created_at','updated_at'];
+
+
 
     public function setTokenAttribute($value){
         $encryptedToken = Crypt::encrypt($value,false);

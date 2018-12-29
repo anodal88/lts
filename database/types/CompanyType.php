@@ -8,16 +8,21 @@
  */
 namespace database\types;
 
-class CompanyType
+class CompanyType extends AbstractType
 {
     const TRAVEL_AGENCY="TRAVEL_AGENCY";
     const HOTEL = "HOTEL";
 
-    /**
-     * @return array
-     * @throws \ReflectionException
-     */
-    public static function choices(){
-        return (new \ReflectionClass(CompanyType::class))->getConstants();
+    public static function choices()
+    {
+        return [
+            self::TRAVEL_AGENCY=>self::TRAVEL_AGENCY,
+            self::HOTEL=>self::HOTEL
+        ];
+    }
+
+    public static function getDefaultValue()
+    {
+        return self::TRAVEL_AGENCY;
     }
 }

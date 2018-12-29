@@ -19,6 +19,7 @@
    */
 
 return [
+    'log_path' => storage_path("logs/sabre/properties/"),
     'soap' => [
         'dev' => [
             'endpoint' => 'https://sws-crt.cert.havail.sabre.com',
@@ -33,16 +34,10 @@ return [
             'get_reservation_rq_version' => '1.17.0',
             'get_hotel_chain_rq_version' => '1.0.0',
             'get_hotel_list_version' => '1.0.0',
-            'domain' => 'DEFAULT',
-            'organization' => 'UC6I',
-            'username' => '986532',
-            'password' => 'WS081318',
-            'application_id' => '99999999',
             'create_session_wsdl' => 'http://webservices.sabre.com/wsdl/sabreXML1.0.00/usg/SessionCreateRQ.wsdl',
             'close_session_wsdl' => 'http://webservices.sabre.com/wsdl/sabreXML1.0.00/usg/SessionCloseRQ.wsdl',
             'ignore_transaction_wsdl' => 'http://webservices.sabre.com/wsdl/tpfc/IgnoreTransactionLLS2.0.0RQ.wsdl',
             'logs_enabled' => false,
-            'log_file' => storage_path("logs/sabrehotel_logs.xml"),
             'client' => [
                 'timeout' => 10,
                 'debug' => false
@@ -70,8 +65,6 @@ return [
             'close_session_wsdl' => 'http://webservices.sabre.com/wsdl/sabreXML1.0.00/usg/SessionCloseRQ.wsdl',
             'ignore_transaction_wsdl' => 'http://webservices.sabre.com/wsdl/tpfc/IgnoreTransactionLLS2.0.0RQ.wsdl',
             'logs_enabled' => false,
-            'log_file' => storage_path("logs/sabrehotel_logs.xml"),
-
         ]
 
     ]

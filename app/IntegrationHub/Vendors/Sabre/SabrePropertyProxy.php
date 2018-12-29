@@ -9,6 +9,7 @@
 
 namespace App\IntegrationHub\Vendors\Sabre;
 
+use App\Company;
 use App\Http\Outputs\Common\Hotel\AvailabilityResponse;
 use App\IntegrationHub\Contracts\IPropertyProvider;
 use App\IntegrationHub\ResourceProxy;
@@ -19,8 +20,11 @@ use App\IntegrationHub\Utils\SoapClientWrapper;
 use App\IntegrationHub\Utils\XMLSerializer;
 use App\IntegrationHub\Vendors\Sabre\Activities\Hotel\SearchActivity;
 use App\SabreConnectionPoolToken;
+use App\SabrePropertyConfiguration;
 use App\User;
+use database\types\ModeType;
 use Illuminate\Cache\Repository as Cache;
+use phpDocumentor\Reflection\Types\Boolean;
 use Wsdl2PhpGenerator\Config;
 use Wsdl2PhpGenerator\Generator;
 use Illuminate\Log\Logger;
@@ -28,6 +32,8 @@ use Illuminate\Log\Logger;
 class SabrePropertyProxy extends ResourceProxy implements IPropertyProvider
 {
     use ResourceProxyTrait,SabrePropertyTrait;
+
+
 
     /** @var string */
     protected $endpoint;
@@ -44,6 +50,10 @@ class SabrePropertyProxy extends ResourceProxy implements IPropertyProvider
 
     /** @var \Illuminate\Log\Logger */
     protected $logger;
+
+    /** @var string */
+    protected $logFileName;
+
     /** @var Cache */
     protected $cacheManager;
 
@@ -74,13 +84,28 @@ class SabrePropertyProxy extends ResourceProxy implements IPropertyProvider
         $this->config = $config;
         $this->logger = $sabreLogger;
         $this->cacheManager =$cacheManager;
+        /** @var Company $company */
+        $company = $this->user->company;
+        /** @var SabrePropertyConfiguration $settings */
+        $settings=$company->sabrePropertyConfiguration;
+        $this->logFileName = $this->getConfigValue($config, 'log_path', true);
+        $this->logFileName.= "{$settings->mode}/{$company->id}_{$user->id}.xml";
+        if($settings->mode === ModeType::MODE_PROD){
+            $this->endpoint = $this->getConfigValue($config, 'soap.prod.endpoint', true, '');
+            $this->username = $settings->username_prod;
+            $this->password = $settings->password_prod;
+            $this->organization = $settings->organization_prod;
+            $this->domain = $settings->domain_prod;
 
-        //TODO put a conditional here based on the environment
-        $this->endpoint = $this->getConfigValue($config, 'soap.dev.endpoint', true, '');
-        $this->username = $this->getConfigValue($config, 'soap.dev.username', true, '');
-        $this->password = $this->getConfigValue($config, 'soap.dev.password', true, '');
-        $this->organization = $this->getConfigValue($config, 'soap.dev.organization', true, '');
-        $this->domain = $this->getConfigValue($config, 'soap.dev.domain', true, '');
+        }else{
+            $this->endpoint = $this->getConfigValue($config, 'soap.dev.endpoint', true, '');
+            $this->username = $settings->username_dev;
+            $this->password = $settings->password_dev;
+            $this->organization = $settings->organization_dev;
+            $this->domain = $settings->domain_dev;
+        }
+
+
     }
 
     /**
@@ -123,6 +148,7 @@ class SabrePropertyProxy extends ResourceProxy implements IPropertyProvider
      */
     public function search($params): AvailabilityResponse
     {
+       
         /** @var AvailabilityResponse $response */
         $response = (new AvailabilityResponse())->setSuccess(true);
 
@@ -368,6 +394,7 @@ class SabrePropertyProxy extends ResourceProxy implements IPropertyProvider
         }
         return $error;
     }
+
 
 
 
